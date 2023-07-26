@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login prof</title>
+		<link id="loginProf" href = "inicial.css" rel ="stylesheet" type ="text/css">
+		<script type = "text/javascript">
+			function logarProf(){
+			var profvalido = "pedro_98765";
+			var senhavalida = "98765";
+			var usuarioProf =  document.getElementById("txtusuarioProf").value;
+			document.getElementById("txtusuarioProf").style.backgroundColor='white';
+			var senhaProf =  document.getElementById("txtsenhaProf").value;
+			document.getElementById("txtsenhaProf").style.backgroundColor='white';
+			if(usuarioProf==""){
+					window.alert("Digite seu nome de usuário!");
+					document.getElementById("txtusuarioProf").style.backgroundColor='#ff0000';
+					document.getElementById("txtusuarioProf").value="";
+					document.getElementById("txtusuarioProf").focus();
+				return false;
+					}
+					else if(usuarioProf!=profvalido){
+					window.alert("Usuário não encontrado no sistema da escola. Tente novamente");
+					document.getElementById("txtusuarioProf").style.backgroundColor='#ff0000';
+					document.getElementById("txtusuarioProf").value="";
+					document.getElementById("txtusuarioProf").focus();
+					return false;
+					
+					}
+					else if(senhaProf==""){
+					window.alert("Digite sua senha!");
+					document.getElementById("txtsenhaProf").style.backgroundColor='#ff0000';
+					document.getElementById("txtsenhaProf").value="";
+					document.getElementById("txtsenhaProf").focus();
+					return false;
+					}
+					else if(senhaProf!=senhavalida){
+					window.alert("Senha incorreta");
+					document.getElementById("txtsenhaProf").style.backgroundColor='#ff0000';
+					document.getElementById("txtsenhaProf").value="";
+					document.getElementById("txtsenhaProf").focus();
+					return false;
+					
+					}
+				else{
+				window.open('inicioProf.html')
+				}
+				}
+				function esqsenhaProf(){
+						window.open('esqsenhaProf.html')
+				}
+				function cadastroProf(){
+						window.open('castroProf.html')
+				}
+
+<!--Depois colocar o if de achar user e senha no bd-->
+		</script>
+		<link rel="shortcut icon" href="ic_top_cursos _icone.ico" type="image/x-icon" />
+	</head>
+		<body style="background-image:url('proff.jpg')">
+			<h1 class="titulo">Entrar</h1><br /><br />
+
+		
+			<div class="formLogarProf" style="margin-left:530px;margin-top:50px;width:500px;height:400px;background-color:white">
+		<h1 style="font-family:sans-serif;padding-top:50px;font-size:50px;color:#303f9f;margin-left:120px">Login Prof</h1>
+
+				<input type = "text" id = "txtusuarioProf" size = "44" maxlength = "20"style="height:40px;font-size:20px;width:340px;padding-left:10px;margin-left:70px"placeholder="Usuário">
+			
+		
+				<input class="a"type = "password" id = "txtsenhaProf" size = "44" maxlength = "42"style="height:40px;margin-top:10px;font-size:20px;width:340px;padding-left:10px;margin-left:70px"placeholder="Senha" /><br />
+		
+			<input type="submit" value = "FAZER LOGIN" style="width:355px;height:40px;margin-top:10px;background-color:#303f9f;border-style:none;color:white;font-size:15px;margin-left:70px" onClick="logarProf()"><BR/>
+			<input type="button" value = "ESQUECEU A SENHA?" style="width:175px;height:40px;margin-top:10px;background-color:#4169E1;border-style:none;color:white;font-size:15px;margin-left:70px"onClick="esqsenhaProf()" >
+			<input type="button" value = "NÃO TEM CADASTRO?" style="width:175px;height:40px;margin-top:10px;background-color:#4169E1;border-style:none;color:white;font-size:15px" onClick="cadastroProf()">
+		</div>
+			<br /><br />
+		</body>
+</html>

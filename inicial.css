@@ -1,0 +1,295 @@
+body{background-color:#73aec2;}
+.body{background-color:white;}
+.bodyInicial{background-image:url('sala.jpg')}
+.divTopCursos{text-align:center}
+.selecionar{background-color:#303f9f;color:#73aec2;padding-bottom:100px;margin-top:50px;width:500px;margin-left:550px}
+.selecionar2{background-color:#303f9f;color:#73aec2;padding-bottom:0px;margin-top:30px;margin-left:300px;margin-right:300px}
+.bemvindo{text-align:center;font-family:sans-serif;color:#73aec2;font-weight:bold;padding-top:50px;font-size:45px}
+.fazerlogin{text-align:center;font-family:sans-serif;color:#73aec2;font-weight:bold;padding-top:10px;font-size:45px}
+.selecionese{text-align:center;font-family:sans-serif;color:#73aec2;font-weight:bold;padding-top:10px;font-size:30px}
+.buttonProf{background-color:#73aec2;color:#303f9f;border:none;font-weight:bold;text-decoration:none;padding:30px 60px;text-align:center;font-size:20px;font-family:sans-serif}
+.buttonAluno{background-color:#73aec2;color:#303f9f;border:none;font-weight:bold;text-decoration:none;padding:30px 87px;text-align:center;font-size:20px;font-family:sans-serif}
+.buttonAdm{background-color:#73aec2;color:#303f9f;border:none;font-weight:bold;text-decoration:none;padding:30px 38px;text-align:center;font-size:20px;font-family:sans-serif}
+.divButtonSelecionese{text-align:center}
+.footer{color:#303f9f;font-weight:bold;text-align:center;font-family:sans-serif}
+.titulo{background-color:#303f9f;color:white;text-align:left;font-family:sans-serif;padding-bottom:10px;padding-top:10px;padding-left:8px;margin-top:-10px;margin-left:-8px;margin-right:-10px}
+.area{text-align:left;font-family:sans-serif;color:#73aec2;font-weight:bold;padding-top:20px;padding-left:140px}
+.area1{text-align:left;font-family:sans-serif;color:#73aec2;font-weight:bold;padding-left:140px}
+.formLogar{text-align:center}
+.campo{background-color:#73aec2;color:#303f9f;font-weight:bold;border:none;text-decoration:none;height:20px;}
+.classeLogin{background-color:#73aec2;color:#303f9f;border:none;font-weight:bold;text-decoration:none;text-align:center;font-family:sans-serif;height:20px}
+.inicio{background-color:white;}
+.inicioTitulo{background-color:white;color:#303f9f;text-align:center;font-family:sans-serif;font-weight:bold;font-size:80px;margin-top:70px;}
+.divInicio{background-color:#ADD8E6;margin-left:200px;margin-right:200px;font-size:50px;padding-top:5px;border-style:solid;border-color:#303f9f}
+.divInicioBol{background-color:#ADD8E6;margin-left:200px;margin-right:200px;font-size:50px;padding-top:5px;border-style:solid;border-color:#303f9f;margin-top:-300px}
+
+.divInicioADM{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:-50px}
+.divInicioADM1{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:30px}
+.divInicioADM2{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:30px}
+.divInicioADM3{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:30px}
+.divInicioADM4{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:30px}
+.divInicioADM5{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:30px}
+.divInicioADM6{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:30px}
+.divInicioADM7{background-color:#E8E8E8;margin-right:50px;padding-right:70px;font-size:50px;padding-top:5px;margin-top:30px;margin-bottom:20px}
+.pPanorama{color:#303f9f;font-weight:bold;font-family:sans-serif;text-align:center;margin-top:1px}
+.tituloInicioADM{background-color:#303f9f;color:white;text-align:left;font-family:sans-serif;padding-bottom:10px;padding-top:10px;padding-left:10px;margin-top:-70px;margin-left:-8px;padding-right:100%;position:fixed;z-index:1}
+.pMelhoresNotas{color:#303f9f;text-align:left;font-size:20px;margin-top:-20px;margin-bottom:35px;font-weight:bold;font-family:sans-serif}
+.final{color:#303f9f;text-align:left;font-size:20px;padding-left:10px;margin-top:px;padding-bottom:0px;font-weight:bold;font-family:sans-serif}
+.buttonMais{background-color:#303f9f;color:#73aec2;border-radius:50px;border-style:none;text-decoration:none;height:50px;width:50px;font-size:40px;margin-left:700px;margin-bottom:10px;padding-top:0px;cursor:pointer}
+.pGraficoFreqInicio{color:#303f9f;text-align:center;font-size:20px;padding-left:10px;margin-top:-20px;margin-bottom:30px;font-weight:bold;font-family:sans-serif}
+.navlat{color:#303f9f;font-weight:bold;font-family:sans-serif;text-align:left;margin-left:-10px;margin-top:100px}
+.navlatProf{color:#303f9f;font-weight:bold;font-family:sans-serif;text-align:left;margin-left:-10px;margin-top:130px}
+.navlatADM{color:#303f9f;font-weight:bold;font-family:sans-serif;text-align:left;margin-left:-10px;margin-top:100px}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-left:30px;
+  padding-top:0px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color:#303f9f;text-align:left;font-size:20px;font-weight:bold;font-family:sans-serif
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #ADD8E6;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #303f9f;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+/* Customize the label (the container) */
+.containerRadio{
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+    color:#303f9f;text-align:left;font-size:20px;font-weight:bold;font-family:sans-serif;margin-left:10px;
+}
+
+
+/* Hide the browser's default radio button */
+.containerRadio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmarkRadio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color:#ADD8E6;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerRadio:hover input ~ .checkmarkRadio {
+  background-color: #303f9f;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerRadio input:checked ~ .checkmarkRadio{
+  background-color: #303f9f;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkRadio:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerRadio input:checked ~ .checkmarkRadio:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerRadio .checkmarkRadio:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.salas{background-color:#303f9f;color:#ADD8E6;border:none;font-weight:bold;text-decoration:none;margin-top:30px;height:60px;width:140px;text-align:center;font-size:20px;font-family:sans-serif}
+.divlec{background-color:#ADD8E6;margin-left:200px;margin-right:200px;font-size:50px;padding-top:5px;border-style:solid;border-color:#303f9f;text-align:center;margin-top:-300px}
+.buttonFoto{background-color:#303f9f;color:#ADD8E6;border:none;font-weight:bold;text-decoration:none;padding:1px 3px;text-align:center;font-size:17px;font-family:sans-serif}
+.txtbox{background-color:white;color:#303f9f;border-style:solid;border-color:#303f9f;font-weight:bold;text-decoration:none;height:20px;}
+.select{background-color:#73aec2;color:#303f9f;border-style:solid;border-color:#303f9f;font-weight:bold;text-decoration:none;height:25px;width:130px;}
+.select2{margin-left:-10px;margin-bottom:10px;background-color:#73aec2;color:#303f9f;border-style:solid;border-color:#303f9f;font-weight:bold;text-decoration:none;height:25px;width:130px;}
+.adicionarUsuario{background-color:#303f9f;color:#ADD8E6;border:none;font-weight:bold;text-decoration:none;padding:8px 8px;margin-left:400px;margin-top:-10px;margin-bottom:30px;text-align:center;font-size:17px;font-family:sans-serif}
+.mudaStatus{background-color:#303f9f;color:#ADD8E6;border:none;font-weight:bold;text-decoration:none;padding:8px 8px;margin-left:292px;margin-top:-10px;margin-bottom:20px;text-align:center;font-size:17px;font-family:sans-serif}
+.atribuir{background-color:#303f9f;color:#ADD8E6;border:none;font-weight:bold;text-decoration:none;padding:10px 30px;margin-left:330px;margin-top:-10px;margin-bottom:20px;text-align:center;font-size:17px;font-family:sans-serif}
+.linha{border:2px solid #303f9f;width:850px;margin-left:70px;}
+.tituloTurma{color:#303f9f;text-align:left;font-size:20px;padding-left:10px;margin-top:-20px;margin-bottom:10px;font-weight:bold;text-decoration:underline;font-family:sans-serif}
+.multiselect {
+  width: 200px;
+  margin-left:483px;
+  margin-top:-87px;
+}
+
+.selectBox {
+  position: relative;
+}
+
+.selectBox select {
+  width: 100%;
+  font-weight: bold;
+}
+
+.overSelect {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+#checkboxes {
+  display: none;
+  border:none;
+}
+
+#checkboxes label {
+  display: block;
+}
+
+#checkboxes label:hover {
+  background-color: #1e90ff;
+}
+
+.multiselect2 {
+  width: 200px;
+  margin-left:540px;
+  margin-top:-90px;
+} 
+
+#checkboxes2 {
+  display: none;
+  border:none;
+}
+
+#checkboxes2 label {
+  display: block;
+}
+
+#checkboxes2 label:hover {
+  background-color: #1e90ff;
+}
+.multiselect3 {
+  width: 200px;
+  margin-left:540px;
+  margin-top:-87px;
+} 
+
+#checkboxes3 {
+  display: none;
+  border:none;
+}
+
+#checkboxes3 label {
+  display: block;
+}
+
+#checkboxes3 label:hover {
+  background-color: #1e90ff;
+}
+
+#checkboxes4 {
+  display: none;
+  border:none;
+}
+
+#checkboxes4 label {
+  display: block;
+}
+
+#checkboxes4 label:hover {
+  background-color: #1e90ff;
+}
+
+.estranha{font-family:sans-serif;background-color:#73aec2;color:#303f9f;font-size:15px;font-weight:bold}
+.pMelhoresNotas2{color:#303f9f;text-align:left;font-size:20px;padding-left:10px;margin-bottom:35px;font-weight:bold;font-family:sans-serif}
+
+table{
+	margin-left:50px;
+	width:50%;
+	font-size:20px;
+}
+.txtbox2{background-color:#ADD8E6;color:black;text-align:center;border:none;font-weight:bold;text-decoration:none;height:20px;}
+.txtbox3{background-color:#ADD8E6;color:black;text-align:center;border:none;font-weight:bold;text-decoration:none;height:20px;::placeholder:color:black;}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: silver;
+  font-family:sans-serif;
+  font-size:20px;
+}
+.a{
+
+	
+}

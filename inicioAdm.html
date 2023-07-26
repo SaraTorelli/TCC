@@ -1,0 +1,1372 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Interface ADM</title>
+		<link id="escolherUsuario" href = "inicial.css" rel ="stylesheet" type ="text/css">
+		
+		
+		
+		<script type = "text/javascript">
+		
+		function xore(){
+		var al= document.getElementById("alvo").value;
+		var titulofinal = document.getElementById("xo").value;
+		var descrifinal =document.getElementById("xei").value;
+		document.getElementById("alvo").style.backgroundColor='white';
+		document.getElementById("xo").style.backgroundColor='white';
+		document.getElementById("xei").style.backgroundColor='white';
+		if(al=="l"){
+		window.alert("Selecione o alvo do aviso");
+		document.getElementById("alvo").style.backgroundColor='#ff0000';
+		document.getElementById("alvo").focus();
+		}else if(titulofinal==""){
+		window.alert("Digite um título!");
+		document.getElementById("xo").style.backgroundColor='#ff0000';
+		document.getElementById("xo").focus();
+		}else if(descrifinal==""){
+		window.alert("Descreva o aviso!");
+		document.getElementById("xei").style.backgroundColor='#ff0000';
+		document.getElementById("xei").focus();
+		}else{
+		window.alert("Aviso enviado!");
+		}
+		}
+		
+		function horprof(){
+		var espaaoo= document.getElementById("31").value;
+		var espaboo = document.getElementById("32").value;
+		var espacoo =document.getElementById("33").value; 
+		var espadoo =document.getElementById("34").value; 
+		var espaeoo =document.getElementById("35").value; 
+		var espafoo =document.getElementById("36").value; 
+		var espagoo =document.getElementById("37").value; 
+		var espahoo =document.getElementById("38").value; 
+		var espaioo =document.getElementById("39").value; 
+		var espajoo =document.getElementById("40").value; 
+		var espakoo =document.getElementById("41").value; 
+		var espaloo =document.getElementById("42").value; 
+		var espamoo =document.getElementById("43").value; 
+		var ja =document.getElementById("ja").value; 
+		var horario2 = document.getElementById("horario2").value;
+		var horarioprof= document.getElementById("horarioprof").value;
+		var dataprof= document.getElementById("dataprof").value;
+		var statusprof= document.getElementById("statusprof").value;
+		document.getElementById("ja").style.backgroundColor='#ADD8E6';
+		document.getElementById("31").style.backgroundColor='#ADD8E6';
+		document.getElementById("32").style.backgroundColor='#ADD8E6';
+		document.getElementById("33").style.backgroundColor='#ADD8E6';
+		document.getElementById("34").style.backgroundColor='#ADD8E6';
+		document.getElementById("35").style.backgroundColor='#ADD8E6';
+		document.getElementById("36").style.backgroundColor='#ADD8E6';
+		document.getElementById("37").style.backgroundColor='#ADD8E6';
+		document.getElementById("38").style.backgroundColor='#ADD8E6';
+		document.getElementById("39").style.backgroundColor='#ADD8E6';
+		document.getElementById("40").style.backgroundColor='#ADD8E6';
+		document.getElementById("41").style.backgroundColor='#ADD8E6';
+		document.getElementById("42").style.backgroundColor='#ADD8E6';
+		document.getElementById("43").style.backgroundColor='#ADD8E6';
+		document.getElementById("horario2").style.backgroundColor='#ADD8E6';
+		document.getElementById("horarioprof").style.backgroundColor='#ADD8E6';
+		document.getElementById("dataprof").style.backgroundColor='#ADD8E6';
+		document.getElementById("statusprof").style.backgroundColor='#ADD8E6';
+
+		if(espaaoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("31").style.backgroundColor='#ff0000';
+		document.getElementById("31").focus();
+		}else if(espaaoo=="PRAP1"){
+		window.alert("Outro professor já leciona PRAP1 nesse horário!");
+		document.getElementById("31").style.backgroundColor='#ff0000';
+		document.getElementById("31").value="";
+		document.getElementById("31").focus();
+		}else if(espaboo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("32").style.backgroundColor='#ff0000';
+		document.getElementById("32").focus();
+		}else if(espacoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("33").style.backgroundColor='#ff0000';
+		document.getElementById("33").focus();
+		}else if(espadoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("34").style.backgroundColor='#ff0000';
+		document.getElementById("34").focus();
+		}else if(espaeoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("35").style.backgroundColor='#ff0000';
+		document.getElementById("35").focus();
+		}else if(espafoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("36").style.backgroundColor='#ff0000';
+		document.getElementById("36").focus();
+		}else if(espagoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("37").style.backgroundColor='#ff0000';
+		document.getElementById("37").focus();
+		}else if(espahoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("38").style.backgroundColor='#ff0000';
+		document.getElementById("38").focus();
+		}else if(espaioo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("39").style.backgroundColor='#ff0000';
+		document.getElementById("39").focus();
+		}else if(espajoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("40").style.backgroundColor='#ff0000';
+		document.getElementById("40").focus();
+		}else if(espakoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("41").style.backgroundColor='#ff0000';
+		document.getElementById("41").focus();
+		}else if(espaloo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("42").style.backgroundColor='#ff0000';
+		document.getElementById("42").focus();
+		}else if(espamoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("43").style.backgroundColor='#ff0000';
+		document.getElementById("43").focus();
+		}else if(ja=="INF2B"){
+		window.alert("Outro professor já dá aula para esta turma neste horário!");
+		document.getElementById("ja").style.backgroundColor='#ff0000';
+		document.getElementById("ja").focus();
+		}else if(horario2==""){
+		window.alert("Digite o ID horário! 2 digitos");
+		document.getElementById("horario2").style.backgroundColor='#ff0000';
+		document.getElementById("horario2").focus();	
+		}else if(isNaN(horario2)){
+		window.alert("Digite o ID horário em números!");
+		document.getElementById("horario2").style.backgroundColor='#ff0000';
+		document.getElementById("horario2").value="";
+		document.getElementById("horario2").focus();
+		}else if(horario2=="10"){
+		window.alert("Esse ID já existe");
+		document.getElementById("horario2").style.backgroundColor='#ff0000';
+		document.getElementById("horario2").value="";
+		document.getElementById("horario2").focus();
+		}else if(horarioprof==""){
+		window.alert("Digite o código do professor!");
+		document.getElementById("horarioprof").style.backgroundColor='#ff0000';
+		document.getElementById("horarioprof").focus();
+		}else if(horarioprof=="12000"){
+		window.alert("Este código é referente a um professor não mais atuante na instituição");
+		document.getElementById("horarioprof").style.backgroundColor='#ff0000';
+		document.getElementById("horarioprof").value="";
+		document.getElementById("horarioprof").focus();
+		}else if(horarioprof=="99999"){
+		window.alert("Professor inexistente");
+		document.getElementById("horarioprof").style.backgroundColor='#ff0000';
+		document.getElementById("horarioprof").value="";
+		document.getElementById("horarioprof").focus();
+		}else if(dataprof==""){
+		window.alert("Digite a data de início da validade deste horário!");
+		document.getElementById("dataprof").style.backgroundColor='#ff0000';
+		document.getElementById("dataprof").value="";
+		document.getElementById("dataprof").focus();	
+		}else if(dataprof!="01/02/2020"){
+		window.alert("Data inválida");
+		document.getElementById("dataprof").style.backgroundColor='#ff0000';
+		document.getElementById("dataprof").value="";
+		document.getElementById("dataprof").focus();
+		}else if(statusprof==""){
+		window.alert("Defina o status deste horário: 'ativo' ou 'inativado' ");
+		document.getElementById("statusprof").style.backgroundColor='#ff0000';
+		document.getElementById("statusprof").focus();	
+
+		}else{
+		window.alert("Horário montado e enviado para o professor Pedro da Silva!");
+		}
+	}				
+
+		function horturma(){
+		var espaao = document.getElementById("1").value;
+		var espabo = document.getElementById("2").value;
+		var espaco =document.getElementById("3").value; 
+		var espado =document.getElementById("4").value; 
+		var espaeo =document.getElementById("5").value; 
+		var espafo =document.getElementById("6").value; 
+		var espago =document.getElementById("7").value; 
+		var espaho =document.getElementById("8").value; 
+		var espaio =document.getElementById("9").value; 
+		var espajo =document.getElementById("10").value; 
+		var espako =document.getElementById("11").value; 
+		var espalo =document.getElementById("12").value; 
+		var espamo =document.getElementById("13").value; 
+		var espano =document.getElementById("14").value; 
+		var espaoo =document.getElementById("15").value; 
+		var espapo =document.getElementById("16").value; 
+		var espaqo =document.getElementById("17").value; 
+		var esparo =document.getElementById("18").value; 
+		var espaso =document.getElementById("19").value; 
+		var espato =document.getElementById("20").value;
+		var horario1 = document.getElementById("horario1").value;
+		var horarioturma = document.getElementById("horarioturma").value;
+		var dataturma= document.getElementById("dataturma").value;
+		var statusturma= document.getElementById("statusturma").value;
+		document.getElementById("1").style.backgroundColor='#ADD8E6';
+		document.getElementById("2").style.backgroundColor='#ADD8E6';
+		document.getElementById("3").style.backgroundColor='#ADD8E6';
+		document.getElementById("4").style.backgroundColor='#ADD8E6';
+		document.getElementById("5").style.backgroundColor='#ADD8E6';
+		document.getElementById("6").style.backgroundColor='#ADD8E6';
+		document.getElementById("7").style.backgroundColor='#ADD8E6';
+		document.getElementById("8").style.backgroundColor='#ADD8E6';
+		document.getElementById("9").style.backgroundColor='#ADD8E6';
+		document.getElementById("10").style.backgroundColor='#ADD8E6';
+		document.getElementById("11").style.backgroundColor='#ADD8E6';
+		document.getElementById("12").style.backgroundColor='#ADD8E6';
+		document.getElementById("13").style.backgroundColor='#ADD8E6';
+		document.getElementById("14").style.backgroundColor='#ADD8E6';
+		document.getElementById("15").style.backgroundColor='#ADD8E6';
+		document.getElementById("16").style.backgroundColor='#ADD8E6';
+		document.getElementById("17").style.backgroundColor='#ADD8E6';
+		document.getElementById("18").style.backgroundColor='#ADD8E6';
+		document.getElementById("19").style.backgroundColor='#ADD8E6';
+		document.getElementById("20").style.backgroundColor='#ADD8E6';
+		document.getElementById("horario1").style.backgroundColor='#ADD8E6';
+		document.getElementById("horarioturma").style.backgroundColor='#ADD8E6';
+		document.getElementById("dataturma").style.backgroundColor='#ADD8E6';
+		document.getElementById("statusturma").style.backgroundColor='#ADD8E6';
+
+		if(espaao==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("1").style.backgroundColor='#ff0000';
+		document.getElementById("1").focus();
+		}else if(espabo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("2").style.backgroundColor='#ff0000';
+		document.getElementById("2").focus();
+		}else if(espaco==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("3").style.backgroundColor='#ff0000';
+		document.getElementById("3").focus();
+		}else if(espado==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("4").style.backgroundColor='#ff0000';
+		document.getElementById("4").focus();
+		}else if(espaeo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("5").style.backgroundColor='#ff0000';
+		document.getElementById("5").focus();
+		}else if(espafo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("6").style.backgroundColor='#ff0000';
+		document.getElementById("6").focus();
+		}else if(espago==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("7").style.backgroundColor='#ff0000';
+		document.getElementById("7").focus();
+		}else if(espaho==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("8").style.backgroundColor='#ff0000';
+		document.getElementById("8").focus();
+		}else if(espaio==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("9").style.backgroundColor='#ff0000';
+		document.getElementById("9").focus();
+		}else if(espajo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("10").style.backgroundColor='#ff0000';
+		document.getElementById("10").focus();
+		}else if(espako==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("11").style.backgroundColor='#ff0000';
+		document.getElementById("11").focus();
+		}else if(espalo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("12").style.backgroundColor='#ff0000';
+		document.getElementById("12").focus();
+		}else if(espamo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("13").style.backgroundColor='#ff0000';
+		document.getElementById("13").focus();
+		}else if(espano==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("14").style.backgroundColor='#ff0000';
+		document.getElementById("14").focus();
+		}else if(espaoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("15").style.backgroundColor='#ff0000';
+		document.getElementById("15").focus();
+		}else if(espapo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("16").style.backgroundColor='#ff0000';
+		document.getElementById("16").focus();
+		}else if(espaqo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("17").style.backgroundColor='#ff0000';
+		document.getElementById("17").focus();
+		}else if(esparo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("18").style.backgroundColor='#ff0000';
+		document.getElementById("18").focus();
+		}else if(espaso ==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("19").style.backgroundColor='#ff0000';
+		document.getElementById("19").focus();
+		}else if(espato ==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("20").style.backgroundColor='#ff0000';
+		document.getElementById("20").focus();			
+		}else if(horario1==""){
+		window.alert("Digite o ID horário! 2 digitos");
+		document.getElementById("horario1").style.backgroundColor='#ff0000';
+		document.getElementById("horario1").focus();	
+		}else if(isNaN(horario1)){
+		window.alert("Digite o ID horário em números!");
+		document.getElementById("horario1").style.backgroundColor='#ff0000';
+		document.getElementById("horario1").value="";
+		document.getElementById("horario1").focus();
+		}else if(horario1=="10"){
+		window.alert("Esse ID já existe");
+		document.getElementById("horario1").style.backgroundColor='#ff0000';
+		document.getElementById("horario1").value="";
+		document.getElementById("horario1").focus();
+		}else if(horarioturma==""){
+		window.alert("Digite o código da turma!");
+		document.getElementById("horarioturma").style.backgroundColor='#ff0000';
+		document.getElementById("horarioturma").focus();
+		}else if(horarioturma=="39"){
+		window.alert("Essa turma foi encerrada em 2019");
+		document.getElementById("horarioturma").style.backgroundColor='#ff0000';
+		document.getElementById("horarioturma").value="";
+		document.getElementById("horarioturma").focus();
+		}else if(horarioturma=="90"){
+		window.alert("Turma inexistente");
+		document.getElementById("horarioturma").style.backgroundColor='#ff0000';
+		document.getElementById("horarioturma").value="";
+		document.getElementById("horarioturma").focus();
+		}else if(dataturma==""){
+		window.alert("Digite a data de início da validade deste horário!");
+		document.getElementById("dataturma").style.backgroundColor='#ff0000';
+		document.getElementById("dataturma").value="";
+		document.getElementById("dataturma").focus();	
+		}else if(dataturma!="01/02/2020"){
+		window.alert("Data inválida");
+		document.getElementById("dataturma").style.backgroundColor='#ff0000';
+		document.getElementById("dataturma").value="";
+		document.getElementById("dataturma").focus();
+		}else if(statusturma==""){
+		window.alert("Defina o status deste horário: 'ativo' ou 'inativado' ");
+		document.getElementById("statusturma").style.backgroundColor='#ff0000';
+		document.getElementById("statusturma").focus();	
+		}else{
+		window.alert("Horário montado e enviado para o INF2F!");
+		}
+	}				
+		function voyage(){
+		var codigop = document.getElementById("codigop").value;
+		var base = document.getElementById("cursodop").value; 
+		var base2 = document.getElementById("turmadop").value; 
+		document.getElementById("codigop").style.backgroundColor='white';
+		document.getElementById("cursodop").style.backgroundColor='white';
+		document.getElementById("turmadop").style.backgroundColor='white';
+		if(codigop==""){
+		window.alert("Digite o código do professor!");
+		document.getElementById("codigop").style.backgroundColor='#ff0000';
+		document.getElementById("codigop").value="";
+		document.getElementById("codigop").focus();
+		}else if(codigop!="98765"){
+		window.alert("Código não encontrado no sistema");
+		document.getElementById("codigop").style.backgroundColor='#ff0000';
+		document.getElementById("codigop").value="";
+		document.getElementById("codigop").focus();
+		}else if(base=="w"){
+		window.alert("Selecione o curso em que ele/ela leciona");
+		document.getElementById("cursodop").style.backgroundColor='#ff0000';
+		document.getElementById("cursodop").focus();
+		}else if(base2=="t"){
+		window.alert("Selecione as turmas para as quais ele/ela leciona");
+		document.getElementById("turmadop").style.backgroundColor='#ff0000';
+		document.getElementById("turmadop").focus();
+		
+		}else{
+		window.alert("Atribuição feita com sucessso: Professor Pedro Silva, curso informática, BADA2 - INF2A, PRAP3 - INF2F");
+		}
+		}
+
+		function tolete(){
+		var primeirovoce= document.getElementById("primeirovoce").value;
+		var depoisvoce= document.getElementById("depoisvoce").value;
+		document.getElementById("primeirovoce").style.backgroundColor='white';
+		document.getElementById("depoisvoce").style.backgroundColor='white';
+		if(primeirovoce==""){
+		window.alert("Digite o código(RM) do aluno");
+		document.getElementById("primeirovoce").style.backgroundColor='#ff0000';
+		document.getElementById("primeirovoce").value="";
+		document.getElementById("primeirovoce").focus();
+		}else if(isNaN(primeirovoce)){
+		window.alert("Digite o código/RM em números");
+		document.getElementById("primeirovoce").style.backgroundColor='#ff0000';
+		document.getElementById("primeirovoce").value="";
+		document.getElementById("primeirovoce").focus();
+		}else if(primeirovoce!="12345"){
+		window.alert("Código/RM não encontrado no sistema");
+		document.getElementById("primeirovoce").style.backgroundColor='#ff0000';
+		document.getElementById("primeirovoce").value="";
+		document.getElementById("primeirovoce").focus();
+		}else if(depoisvoce==""){
+		window.alert("Digite o ID da turma!");
+		document.getElementById("depoisvoce").style.backgroundColor='#ff0000';
+		document.getElementById("depoisvoce").value="";
+		document.getElementById("depoisvoce").focus();
+		}else if(depoisvoce=="044"){
+		window.alert("Turma 044 encerrada em 2018");
+		document.getElementById("depoisvoce").style.backgroundColor='#ff0000';
+		document.getElementById("depoisvoce").value="";
+		document.getElementById("depoisvoce").focus();
+		}else if(depoisvoce=="090"){
+		window.alert("Turma inexistente");
+		document.getElementById("depoisvoce").style.backgroundColor='#ff0000';
+		document.getElementById("depoisvoce").value="";
+		document.getElementById("depoisvoce").focus();
+		}else{
+		window.alert("Mateus Silva atribuído ao INF2F!");
+		}
+		}
+
+		function adicionarcurso(){
+		var nomedocurso = document.getElementById("nomedocurso").value;
+		var iddocurso = document.getElementById("iddocurso").value;
+		document.getElementById("nomedocurso").style.backgroundColor='white';
+		document.getElementById("iddocurso").style.backgroundColor='white';
+		if(nomedocurso==""){
+		window.alert("Digite o nome do curso");
+		document.getElementById("nomedocurso").style.backgroundColor='#ff0000';
+		document.getElementById("nomedocurso").value="";
+		document.getElementById("nomedocurso").focus();
+		}else if(nomedocurso=="Informatica"){
+		window.alert("Curso informatica já adicionado");
+		document.getElementById("nomedocurso").style.backgroundColor='#ff0000';
+		document.getElementById("nomedocurso").value="";
+		document.getElementById("nomedocurso").focus();
+		}else if(iddocurso==""){
+		window.alert("Crie um ID para o curso! Somente 1 digito");
+		document.getElementById("iddocurso").style.backgroundColor='#ff0000';
+		document.getElementById("iddocurso").value="";
+		document.getElementById("iddocurso").focus();
+		}else if(isNaN(iddocurso)){
+		window.alert("Digite o ID em número");
+		document.getElementById("iddocurso").style.backgroundColor='#ff0000';
+		document.getElementById("iddocurso").value="";
+		document.getElementById("iddocurso").focus();
+		}else if(iddocurso=="1"){
+		window.alert("ID 1 já é para o curso de informática");
+		document.getElementById("iddocurso").style.backgroundColor='#ff0000';
+		document.getElementById("iddocurso").value="";
+		document.getElementById("iddocurso").focus();
+		}else{
+		window.alert("Curso adicionado!");
+		}
+		}
+
+		function adicionarmateria(){
+		var nomemateria= document.getElementById("nomemateria").value;
+		var idmateria = document.getElementById("idmateria").value;
+		var qualcurso= document.getElementById("Deusnuncameabandonou").value;
+		document.getElementById("nomemateria").style.backgroundColor='white';
+		document.getElementById("idmateria").style.backgroundColor='white';
+		document.getElementById("Deusnuncameabandonou").style.backgroundColor='white';
+		if(nomemateria==""){
+		window.alert("Digite a sigla da matéria!");
+		document.getElementById("nomemateria").style.backgroundColor='#ff0000';
+		document.getElementById("nomemateria").value="";
+		document.getElementById("nomemateria").focus();
+		}else if(idmateria==""){
+		window.alert("Digite o ID da matéria! 3 digitos");
+		document.getElementById("idmateria").style.backgroundColor='#ff0000';
+		document.getElementById("idmateria").value="";
+		document.getElementById("idmateria").focus();
+		}else if(isNaN(idmateria)){
+		window.alert("Digite o ID da matéria em números!");
+		document.getElementById("idmateria").style.backgroundColor='#ff0000';
+		document.getElementById("idmateria").value="";
+		document.getElementById("idmateria").focus();
+		}else if(qualcurso=="oi"){
+		window.alert("Escolha um curso para alocar tal matéria");
+		document.getElementById("Deusnuncameabandonou").style.backgroundColor='#ff0000';
+	
+		document.getElementById("Deusnuncameabandonou").focus();
+		}else if(qualcurso=="io"){
+			window.alert("Matéria adicionada!");
+		
+		}
+		}
+		
+		function turma(){
+		var turmaoficial="INF2F"
+		var anooficial ="2020"
+		var idoficial="45"
+		var turma =  document.getElementById("turma").value;
+		document.getElementById("turma").style.backgroundColor='white';
+		var ano=  document.getElementById("ano").value;
+		document.getElementById("ano").style.backgroundColor='white';
+		var id=  document.getElementById("id").value;
+		document.getElementById("id").style.backgroundColor='white';
+		if(turma==""){
+		window.alert("Digite o nome da turma!");
+		document.getElementById("turma").style.backgroundColor='#ff0000';
+		document.getElementById("turma").value="";
+		document.getElementById("turma").focus();
+		}else if(ano==""){
+		window.alert("Digite o ano da turma! Ex:2020");
+		document.getElementById("ano").style.backgroundColor='#ff0000';
+		document.getElementById("ano").value="";
+		document.getElementById("ano").focus();
+		}else if(turma=="INF2F" && ano=="2020"){
+		window.alert("Turma INF2F já criada para o ano de 2020");
+		document.getElementById("turma").style.backgroundColor='#ff0000';
+		document.getElementById("ano").style.backgroundColor='#ff0000';
+		}else if(id==""){
+		window.alert("Digite o id único da turma! 2 digitos");
+		document.getElementById("id").style.backgroundColor='#ff0000';
+		document.getElementById("id").value="";
+		document.getElementById("id").focus();
+		}else if(id==idoficial){
+		window.alert("ID já utilizado para outra turma. ID precisa ser único!");
+		document.getElementById("id").style.backgroundColor='#ff0000';
+		document.getElementById("id").value="";
+		document.getElementById("id").focus();
+		}else{
+		window.alert("Turma adicionada");
+		}
+		}
+
+		function ativa(){
+		var teste="98765";
+		var cod=  document.getElementById("cod").value;
+		var option=  document.getElementById("option").value;
+		document.getElementById("cod").style.backgroundColor='white';
+		document.getElementById("option").style.backgroundColor='white';
+		if(cod==""){
+		window.alert("Digite o código do usuário!");
+		document.getElementById("cod").style.backgroundColor='#ff0000';
+		document.getElementById("cod").value="";
+		document.getElementById("cod").focus();
+		}else if(cod!=teste){
+		window.alert("Código não encontrado no sistema");
+		document.getElementById("cod").style.backgroundColor='#ff0000';
+		document.getElementById("cod").value="";
+		document.getElementById("cod").focus();
+		}else if(option=="x"){
+		window.alert("Selecione um status!");
+		document.getElementById("option").style.backgroundColor='#ff0000';
+		document.getElementById("option").value="";
+		document.getElementById("option").focus();
+		}else if(option=="0"){
+		window.alert("Usuário ativo");
+		}else if(option=="1"){
+		window.alert("Usuário desativado");
+		}
+		}
+		
+		
+
+		function user(){
+		var nome =  document.getElementById("nome").value;
+		var codigo =  document.getElementById("codigo").value;
+		var cpf=  document.getElementById("cpf").value;
+		var rg=  document.getElementById("rg").value;
+		var email=  document.getElementById("email").value;
+		var cargo=  document.getElementById("cargo").value;
+		var login=  document.getElementById("login").value;
+		var nivel =  document.getElementById("select").value;
+		var user=  document.getElementById("user").value;
+		var senha=  document.getElementById("senha").value;
+		var foto=  document.getElementById("foto").value;
+		document.getElementById("nome").style.backgroundColor='white';
+		document.getElementById("codigo").style.backgroundColor='white';
+		document.getElementById("cpf").style.backgroundColor='white';
+		document.getElementById("rg").style.backgroundColor='white';
+		document.getElementById("email").style.backgroundColor='white';
+		document.getElementById("cargo").style.backgroundColor='white';
+		document.getElementById("login").style.backgroundColor='white';
+		document.getElementById("select").style.backgroundColor='white';
+		document.getElementById("user").style.backgroundColor='white';
+		document.getElementById("senha").style.backgroundColor='white';	
+		document.getElementById("foto").style.backgroundColor='white';
+	
+		document.getElementById("senha").style.backgroundColor='white';	
+		document.getElementById("foto").style.backgroundColor='white';
+		if(nome==""){
+			window.alert("Digite o nome!");
+			document.getElementById("nome").style.backgroundColor='#ff0000';
+			document.getElementById("nome").value="";
+			document.getElementById("nome").focus();
+			return false;
+		}else if(codigo==""){
+			window.alert("Digite o código!");
+			document.getElementById("codigo").style.backgroundColor='#ff0000';
+			document.getElementById("codigo").value="";
+			document.getElementById("codigo").focus();
+			return false;
+		}else if(cpf==""){
+			window.alert("Digite o CPF!")
+			document.getElementById("cpf").style.backgroundColor='#ff0000';
+			document.getElementById("cpf").value="";
+			document.getElementById("cpf").focus();
+return false;
+		}else if(rg==""){
+			window.alert("Digite o RG!")
+			document.getElementById("rg").style.backgroundColor='#ff0000';
+			document.getElementById("rg").value="";
+			document.getElementById("rg").focus();
+return false;
+		}else if(email==""){
+			window.alert("Digite o email!")
+			document.getElementById("email").style.backgroundColor='#ff0000';
+			document.getElementById("email").value="";
+			document.getElementById("email").focus();
+return false;
+		}else if(cargo==""){
+			window.alert("Digite o cargo!")
+			document.getElementById("cargo").style.backgroundColor='#ff0000';
+			document.getElementById("cargo").value="";
+			document.getElementById("cargo").focus();
+return false;
+		}else if(login==""){
+			window.alert("Crie um ID Login único!");
+			document.getElementById("login").style.backgroundColor='#ff0000';
+			document.getElementById("login").value="";
+			document.getElementById("login").focus();
+return false;
+		}else if(nivel=="x"){
+			window.alert("Selecione o nível de acesso!");
+			document.getElementById("select").style.backgroundColor='#ff0000';
+			document.getElementById("select").value="";
+			document.getElementById("select").focus();
+			return false;
+		}
+		else if(user==""){
+			window.alert("Digite o nome de usuário");
+			document.getElementById("user").style.backgroundColor='#ff0000';
+			document.getElementById("user").value="";
+			document.getElementById("user").focus();
+		return false;
+		}else if(senha==""){
+			window.alert("Crie uma senha inicial para esse usuário!");
+			document.getElementById("senha").style.backgroundColor='#ff0000';
+			document.getElementById("senha").value="";
+			document.getElementById("senha").focus();
+		return false;
+		}else if(foto==""){
+			window.alert("Coloque uma foto!");
+			document.getElementById("foto").style.backgroundColor='#ff0000';
+			document.getElementById("foto").value="";
+			document.getElementById("foto").focus();
+		return false;
+		}else{
+		window.alert("Usuário adicionado com sucesso!");
+		}
+}
+
+		function sair(){
+		window.open('index.html');
+		}
+			
+				function dadosAdm(){
+		window.open('dadosAdm.html');
+		}
+function consulta(){
+		window.open('consulta.html');
+		}
+
+		function calenAdm(){
+		window.open('calenAdm.html');
+		}
+		function adicionarUsuario(){
+			window.alert('Usuário adicionado. Ao se cadastrar em sua interface, o usuário receberá seu login no email que foi adicionado aqui.');
+			}
+			var expanded = false;
+
+			function showCheckboxes() {
+			  var checkboxes = document.getElementById("checkboxes");
+			  if (!expanded) {
+				checkboxes.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes2() {
+			  var checkboxes2 = document.getElementById("checkboxes2");
+			  if (!expanded) {
+				checkboxes2.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes2.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes3() {
+			  var checkboxes3 = document.getElementById("checkboxes3");
+			  if (!expanded) {
+				checkboxes3.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes3.style.display = "none";
+				expanded = false;
+			  }
+			}
+			
+		</script>
+		<style>
+
+.vertical-menu {
+  width:290px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #c0c0c0;
+}
+
+.vertical-menu a.active {
+  background-color: #c0c0c0;
+  color: black;
+}
+.vertical-menu a.active2 {
+  background-color:#303f9f;
+  color: black;
+  margin-top:-5px;
+}
+</style>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size:20px;
+  
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+</style>
+		<link rel="shortcut icon" href="ic_top_cursos _icone.ico" type="image/x-icon" />
+	</head>
+		<body class="body"> 
+<h1 class="tituloInicioADM">Interface&nbsp;ADM</h1>
+				<h1 class="inicioTitulo" style="margin-left:330px">Sistema CRUD</h1>
+			<div style="width:290px;height:100%;background-color:#E8E8E8;color:#EEEEE0;margin-top:-150px;margin-left:-10px;position:fixed">
+			
+				<img src = 'user.png' style="height:250px;width:290px;">
+			
+	
+
+<div class="vertical-menu">
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;color:white;text-align:center">João da Silva</a>
+
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;background-color:#D3D3D3;color:#444;text-align:center">Secretário</a>
+
+<a href="dadosAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Dados</a>
+
+
+<a href="calenAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Calendário</a>
+
+<a href="consulta.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Consulta de dados</a>
+
+
+<a href="index.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Sair</a>n>
+
+  
+</div>
+			
+  
+</div>
+			
+			<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+			<div class="divInicioADM" style="margin-left:383px;margin-top:-50px">
+		<p class="pPanorama" style="padding-left:80px;padding-top:20px">Adicionar usuário</p>
+		<p class="pMelhoresNotas"style="padding-left:30px;padding-top:-35px">Nome:&nbsp;<input type="text-box" id="nome" class="txtbox" size="50" maxlength="50"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Código usuário:&nbsp;<span style="font-size:15px">5 digitos</span>
+		<input type="text-box" id="codigo" class="txtbox" size="5"maxlength="5"></p>
+	
+		<p class="pMelhoresNotas"style="padding-left:30px">CPF:&nbsp;<input type="text-box" id="cpf"class="txtbox" maxlength="11"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">RG:&nbsp;<input type="text-box" id="rg" class="txtbox" maxlength="9"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Email. :&nbsp;<input type="text-box" id="email" class="txtbox" maxlength="50"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Sexo:
+		<label class="containerRadio">Masculino
+		  <input type="radio"  id = "radsex" name = "gsex" checked = "checked" value = "m">
+		  <span class="checkmarkRadio"></span>
+		</label>
+		<label class="containerRadio">Feminino
+		  <input type="radio" id = "radsex1" name = "gsex" value = "f" >
+		  <span class="checkmarkRadio"></span>
+		</label>
+		<p class="pMelhoresNotas"style="padding-left:30px">Cargo:&nbsp;<input type="text-box" id="cargo" class="txtbox" maxlength="11"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">ID Login:&nbsp;<span style="font-size:15px">5 digitos:&nbsp;<input type="text-box" id="login"size="5"class="txtbox" maxlength="5"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Nível de acesso.:
+		<select id="select"class="select">
+			<option value = "x" class="select">Nível de acesso</option>
+			<option value = "1" class="select">Aluno</option>
+			<option value = "2" class="select">Professor</option>
+			<option value = "3" class="select">ADM</option>
+		</select>
+		</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Nome usuário:&nbsp;<span style="font-size:15px">(Formato: nomeusuario_códigousuario)</span>&nbsp;<input type="text-box" id="user" class="txtbox" maxlength="50"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Senha usuário:&nbsp;<input type="text-box" id="senha" class="txtbox" maxlength="50"></p>
+			<p class="pMelhoresNotas"style="padding-left:30px">Foto usuário:
+		<input type="file" id="foto" style="height:30px;width:500px"/>
+		</p>
+		<input type="submit" onClick="user()" value = "Adicionar usuário +" class="adicionarUsuario"style="margin-left:;">
+		</div><br/><br/><br/><br/><br/>
+
+		<div class="divInicioADM" style="margin-left:383px">
+		<p class="pPanorama" style="padding-left:80px;padding-top:20px">Alterar dados usuário/ Deletar usuário</p>
+		<p class="pMelhoresNotas"style="padding-left:30px;padding-top:-35px"><input type="text" maxlength="5" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;width:800px;margin-left:0px;"id="txtBusca" placeholder="Buscar usuário pelo código..."/> <a href="alter.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a></p>
+<br/>	
+</div>
+<br/>
+		
+			
+		
+		
+		
+		<div class="divInicioADM1"style="margin-left:383px">
+		<p class="pPanorama"style="padding-left:80px;padding-top:20px">Ativar/Desativar usuário</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Código usuário :&nbsp;<input type="text-box" id="cod" class="txtbox" size="5"maxlength="5">
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p class="pMelhoresNotas"style="padding-left:30px">Status login:&nbsp;
+		<select class="select" id="option">
+			<option value = "x" class="select">Status login</option>
+			<option value = "0" class="select">Ativado</option>
+			<option value = "1" class="select">Desativado</option>
+		</select></p>
+		<input type="submit"value = "Mudar status usuário" onclick="ativa()"class="mudaStatus"style="margin-left:400px;">
+		</div>
+		
+		<div class="divInicioADM2"style="margin-left:383px">
+		<p class="pPanorama"style="padding-left:80px;padding-top:20px">Adicionar turma</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Nome turma:&nbsp;<input type="text-box" id="turma"size="5"class="txtbox" maxlength="5"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Ano turma:&nbsp;<input type="text-box" size="4"class="txtbox" id="ano" maxlength="4"></p>
+		
+		<p class="pMelhoresNotas"style="padding-left:30px">ID turma:&nbsp;
+		<input type="text-box" size="2"class="txtbox" maxlength="2" id="id"></p>
+		<input type="submit"value = "Adicionar turma +" onclick="turma()"class="adicionarUsuario"style="margin-left:;">
+		</div><br/><br/><br/><br/>
+		
+		<div class="divInicioADM" style="margin-left:383px">
+		<p class="pPanorama" style="padding-left:80px;padding-top:20px">Alterar dados turma/ Deletar turma</p>
+		<p class="pMelhoresNotas"style="padding-left:30px;padding-top:-35px"><input type="text" maxlength="2" style="background-color:#303f9f;font-family:sans-serif;
+		 font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;width:800px;margin-left:0px;"id="txtBusca" placeholder="Buscar usuário pelo ID turma..."/> <a href="alterturma.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a></p>
+		<br/>	
+		</div>
+		
+		<div class="divInicioADM3"style="margin-left:383px">
+		<p class="pPanorama"style="padding-left:80px;padding-top:20px">Atribuir aluno a uma turma</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Código aluno:&nbsp;<input type="text-box" size="5" id="primeirovoce" class="txtbox" maxlength="5"><br /><br />
+		ID turma:
+		<input type="text-box" size="3"class="txtbox" id="depoisvoce" maxlength="3"></p>
+		<input type="submit"value = "Atribuir" onclick="tolete()"class="adicionarUsuario" style="margin-left:450px">
+		</div>
+		
+		<div class="divInicioADM4"style="margin-left:383px;>
+		<div class="divInicioADM">
+		<p class="pPanorama"style="padding-left:80px;padding-top:20px">Atribuir cursos e matérias</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Nome curso.:&nbsp;<input type="text-box" size="10" id="nomedocurso"class="txtbox" maxlength="50"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">ID curso:&nbsp;<input type="text-box" size="1"class="txtbox" id="iddocurso" maxlength="1"></p>
+		<input type="submit"value = "Adicionar curso +" class="adicionarUsuario"style="margin-left:px;" onclick="adicionarcurso()">
+		<hr class="linha"/><br />
+
+		<p class="pMelhoresNotas"style="padding-left:30px">Sigla da matéria.:&nbsp;<input type="text-box" id="nomemateria" size="10"class="txtbox" maxlength="10"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">ID matéria:&nbsp;<input type="text-box" id="idmateria"size="3"class="txtbox" maxlength="3"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Esta matéria será parte de qual/quais curso(s)?&nbsp;&nbsp;</p>
+		  <div class="multiselect">
+    <div class="selectBox" onclick="showCheckboxes()">
+      <select class="select" id="Deusnuncameabandonou">
+        <option class="select" value="oi">Atribuir ao curso:</option>
+	<option class="select" value="io"></option>
+      </select>
+      
+    </div>
+    <div id="checkboxes">
+      <label class="estranha">
+        <input type="checkbox"/>EDF</label>
+      <label class="estranha">
+        <input type="checkbox"/>EEl</label>
+      <label class="estranha" >
+        <input type="checkbox"/>INF</label>
+    </div>
+  </div>
+      
+  
+		<input type="submit"value = "Adicionar matéria +" onclick="adicionarmateria()"class="adicionarUsuario"style="margin-left:400px;">
+		</div>
+		</div><br/>	<br/>	<br/>	<br/>	
+		<div class="divInicioADM" style="margin-left:383px">
+		<p class="pPanorama" style="padding-left:80px;padding-top:20px">Alterar/deletar relação curso-matéria</p>
+		<table border="1" style="margin-left:270px;padding-top:0px">
+				<tr>
+				<th>Curso</th>
+				<th>Sigla matéria</th>
+				<th>ID curso</th>
+				<th>ID matéria</th>
+				</tr>
+				<tr style="text-align:center">
+				<td>Informática</td>
+				<td>PRAP1</td>
+				<td>1</td>
+				<td>11</td>
+				
+				</tr>
+				<tr style="text-align:center">
+				<td>Informática</td>
+				<td>PRAP2</td>
+				<td>1</td>
+				<td>12</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>PRAP3</td>
+				<td>1</td>
+				<td>13</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>BADA1</td>
+				<td>1</td>
+				<td>14</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>BADA2</td>
+				<td>1</td>
+				<td>15</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>BADA3</td>
+				<td>1</td>
+				<td>16</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>LIP1</td>
+				<td>1</td>
+				<td>17</td>
+				
+				</tr>
+				<tr style="text-align:center">
+				<td>Informática</td>
+				<td>LIP2</td>
+				<td>1</td>
+				<td>18</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>LIP3</td>
+				<td>1</td>
+				<td>19</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>ASOO</td>
+				<td>1</td>
+				<td>20</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>PTI</td>
+				<td>1</td>
+				<td>21</td>
+				
+				</tr><tr style="text-align:center">
+				<td>Informática</td>
+				<td>PTI2</td>
+				<td>1</td>
+				<td>22</td>
+				
+				</tr>
+				<tr style="text-align:center">
+				<td>Edificações</td>
+				<td>BADA2</td>
+				<td>2</td>
+				<td>22</td>
+				
+				</tr>
+				
+				
+			
+				</table>
+		<a href = "edifi.html" class="adicionarUsuario" style="margin-left:400px">Ir para a página de alteração</a>
+		<br/><br/>
+		</div>
+		
+		
+		
+		<div class="divInicioADM5"style="margin-left:383px;margin-right:50px">
+		
+		<p class="pPanorama"style="padding-left:80px;padding-top:20px">Atribuir curso, matéria, turma e professor</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Digite o código do professor em questão:&nbsp;<input type="text-box" id="codigop" class="txtbox" size="5"maxlength="5"></p>
+		<p class="pMelhoresNotas2"style="padding-left:30px">Selecione o(s) curso(s) atribuído(s) a esse professor:</p> 
+		<div class="multiselect3"style="padding-left:5px">
+			<div class="selectBox" onclick="showCheckboxes3()">
+			  <select class="select" id="cursodop">
+				<option class="select" value="w">Selecionar curso(s):</option>
+				<option class="select" value="y"></option>
+			  </select>
+			</div>
+			<div id="checkboxes3">
+			<label class="estranha">
+			 	<input type="checkbox"/>EDF</label>
+			  <label class="estranha">
+				<input type="checkbox"/>EEL</label>
+			  <label class="estranha" >
+				<input type="checkbox"/>INF</label>
+			</div>
+		  </div><br/>
+		<p class="pMelhoresNotas"style="padding-left:30px">Selecione a(s) turmas(s) atribuída(s) a esse professor:</p><!--listas terao que
+		ser geradas conforme inserção de dados anteriores. Se selecionar curso X, lista gerada será só de matérias do
+curso X, se for X eY, do X e Y e assim por diante. Se for selecionado curso X, so aparecera as turmas que tem curso X-->
+				<div class="multiselect2"style="padding-left:12px">
+			<div class="selectBox" onclick="showCheckboxes2()">
+			  <select class="select" id="turmadop">
+				<option class="select" value="t">Selecionar turma(s):</option>
+				<option class="select"></option>
+				
+			  </select>
+			</div>
+			<div id="checkboxes2">
+			 <label class="estranha">
+				<input type="checkbox"/>INF1A</label>
+			  <label class="estranha">
+				<input type="checkbox"/>INF1B</label>
+			  <label class="estranha" >
+				<input type="checkbox"/>INF1C</label>
+				  <label class="estranha">
+				<input type="checkbox"/>INF1D</label>
+			  <label class="estranha">
+				<input type="checkbox"/>INF1E</label>
+			  <label class="estranha" >
+				<input type="checkbox"/>INF1F</label>
+			 <label class="estranha">
+				<input type="checkbox"/>INF2A</label>
+			  <label class="estranha">
+				<input type="checkbox"/>INF2B</label>
+			  <label class="estranha" >
+				<input type="checkbox"/>INF2C</label>
+				  <label class="estranha">
+				<input type="checkbox"/>INF2D</label>
+			  <label class="estranha">
+				<input type="checkbox"/>INF2E</label>
+			  <label class="estranha" >
+				<input type="checkbox"/>INF2F</label>
+			
+			</div>
+		  </div><br/>
+		<p class="pMelhoresNotas"style="padding-left:30px">Selecione que matérias esse professor dará a cada turma selecionada:</p>
+<hr class="linha"/><br />
+		<p class="tituloTurma"style="padding-left:30px">INF2A:</p>
+			<label class="container" id = "PRAP1">PRAP1
+		  <input type="checkbox">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container" id = "PRAP2">PRAP2
+		  <input type="checkbox">
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "PRAP3">PRAP3
+		  <input type="checkbox">
+		<span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "BADA1">BADA1
+		  <input type="checkbox">
+		<span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "BADA2">BADA2
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "BADA3">BADA3
+		  <input type="checkbox">
+		<span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativi1">LIP1
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativi2">LIP2
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativiY">LIP3
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativiW">ASOO
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "PROJ">PTI
+		  <input type="checkbox">
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "PROJ2">PTI2
+		  <input type="checkbox">
+		  <span class="checkmark"></span>
+		</label>
+	<br />
+		
+		<p class="tituloTurma"style="padding-left:30px">INF2F:</p>
+			<label class="container" id = "PRAP1">PRAP1
+		  <input type="checkbox">
+			<span class="checkmark"></span>
+			</label>
+
+			<label class="container" id = "PRAP2">PRAP2
+		  <input type="checkbox">
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "PRAP3">PRAP3
+		  <input type="checkbox">
+		<span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "BADA1">BADA1
+		  <input type="checkbox">
+		<span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "BADA2">BADA2
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "BADA3">BADA3
+		  <input type="checkbox">
+		<span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativi1">LIP1
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativi2">LIP2
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativiY">LIP3
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container"id = "id_ativiW">ASOO
+		  <input type="checkbox" >
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "PROJ">PTI
+		  <input type="checkbox">
+		  <span class="checkmark"></span>
+		</label>
+
+		<label class="container" id = "PROJ2">PTI2
+		  <input type="checkbox">
+		  <span class="checkmark"></span>
+		</label>
+				<input type="submit" onclick="voyage()"value = "Atribuir" class="atribuir"style="margin-left:450px;">
+		
+		</div>
+		
+		<div class="divInicioADM6"style="margin-left:383px">
+
+		<p class="pPanorama"style="padding-left:80px;padding-top:20px">Montar horário de aulas</p>
+		<table border="1" style="margin-left:120px;padding-top:-10px;">
+				<tr>
+				<th>Horário</th>
+				<th>Segunda</th>
+				<th>Terça</th>
+				<th>Quarta</th>
+				<th>Quinta</th>
+				<th>Sexta</th>
+				</tr>
+				<tr>
+				<td>07:00</td>
+				<td><input type="text-box" id="1" class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="2" class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="3"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="4"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="5"class="txtbox2" size="12" maxlength="50"></td>
+				</tr>
+				<tr>
+				<td>07:50</td>
+				<td><input type="text-box" id="6"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="7"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="8"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="9"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="10"class="txtbox2" size="12" maxlength="50"></td>
+				</tr>
+				<tr>
+				<td>08:40</td>
+				<td><input type="text-box" id="11"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="12"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="13"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="14"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="15"class="txtbox2" size="12" maxlength="50"></td>
+				</tr>
+				<tr>
+				<td>09:30</td>
+				<td><input type="text-box" id="16"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="17"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="18"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="19"class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" id="20"class="txtbox2" size="12" maxlength="50"></td>
+				</tr>
+				<tr>
+				<th colspan="1" style="text-align:center">ID horário</th>
+				<th colspan="1" style="text-align:center">Código turma</th>
+				<th colspan="1" style="text-align:center">Data inicial</th>
+				<th colspan="1" style="text-align:center">Status horário</th>
+				</tr>
+				<tr>
+				<td><input type="text-box" id="horario1" class="txtbox2" size="12" maxlength="2"></td>
+				<td><input type="text-box" id="horarioturma"class="txtbox2" size="12" maxlength="2"></td>
+				<td><input type="text-box" id="dataturma"class="txtbox2" size="12" maxlength="10"></td>
+				<td><input type="text-box" id="statusturma"class="txtbox2" size="12" maxlength="50"></td>
+			</tr>
+				
+				</table>
+			
+					<input type="submit"value = "Enviar horário para turma" onClick="horturma()"class="atribuir"style="margin-left:350px;"><br />
+					
+						<table border="1" style="margin-left:120px;padding-top:0px">
+				<tr>
+				<th>Horário</th>
+				<th>Segunda</th>
+				<th>Terça</th>
+				<th>Quarta</th>
+				<th>Quinta</th>
+				<th>Sexta</th>
+				</tr>
+				<tr>
+				<td>07:00</td>
+				<td><input type="text-box" class="txtbox2" id="31" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="32" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" id="33"size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="34" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" id="ja"size="12" maxlength="50"></td>
+				</tr>
+				<tr>
+				<td>07:50</td>
+				<td><input type="text-box" class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="35" size="12" maxlength="50"></td>
+				</tr>
+				<tr>
+				<td>08:40</td>
+				<td><input type="text-box" class="txtbox2"id="36" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="37" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" id="38"size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2" size="12" maxlength="50"></td>
+				</tr>
+				<tr>
+				<td>09:30</td>
+				<td><input type="text-box" class="txtbox2"id="39" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="40" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="41" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="42" size="12" maxlength="50"></td>
+				<td><input type="text-box" class="txtbox2"id="43" size="12" maxlength="50"></td>
+				</tr>
+				
+				<tr>
+				<th colspan="1"  style="text-align:center">ID horário</th>
+				<th colspan="1" style="text-align:center">Código prof</th>
+				<th colspan="1" style="text-align:center">Data inicial</th>
+				<th colspan="1" style="text-align:center">Status horário</th>
+				</tr>
+				<tr>
+				<td><input type="text-box" class="txtbox2" id="horario2" size="12" maxlength="2"></td>
+				<td><input type="text-box" class="txtbox2" id="horarioprof"size="12" maxlength="5"></td>
+				<td><input type="text-box" class="txtbox2" id="dataprof"size="12" maxlength="10"></td>
+				<td><input type="text-box" class="txtbox2" id="statusprof"size="12" maxlength="50"></td>
+			</tr>
+				</table>
+					<input type="submit"value = "Enviar horário para professor" onClick="horprof()" class="atribuir"style="margin-left:350px;">
+					</div>
+					
+		
+		<div class="divInicioADM7"style="margin-left:383px;">
+		
+		<p class="pPanorama"style="padding-left:80px;padding-top:20px">Enviar aviso</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Alvo:
+			<select class="select" id="alvo">
+			<option value = "l" class="select">Alvo:</option>
+			<option value = "manha" class="select">Professores</option>
+			<option value = "tarde" class="select">Alunos</option>
+			<option value = "opa" class="select">Todos</option>
+		</select></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Título do aviso:	<input type="text-box" id="xo"class="txtbox" size="50"maxlength="50"></p>
+		
+		<p class="pMelhoresNotas"style="padding-left:30px">Descrição do aviso:	<input type="text-box" id="xei" class="txtbox" size="50"maxlength="500"></p>
+			<input type="submit"value = "Enviar aviso" onclick="xore()" class="atribuir" style="margin-left:430px">
+		
+		</div>
+
+		
+			
+		
+		
+		</body>
+		
+</html>

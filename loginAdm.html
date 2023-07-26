@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Login ADM</title>
+		<link id="loginADM" href = "inicial.css" rel ="stylesheet" type ="text/css">
+		<script type = "text/javascript">
+			function logarAdm(){
+			var admvalido = "joao_10132";
+			var senhavalida = "10132";
+			var usuarioADM =  document.getElementById("txtusuarioAdm").value;
+			document.getElementById("txtusuarioAdm").style.backgroundColor='white';
+			var senhaADM =  document.getElementById("txtsenhaAdm").value;
+			document.getElementById("txtsenhaAdm").style.backgroundColor='white';
+			if(usuarioADM==""){
+					window.alert("Digite seu nome de usuário!");
+					document.getElementById("txtusuarioAdm").style.backgroundColor='#ff0000';
+					document.getElementById("txtusuarioAdm").value="";
+					document.getElementById("txtusuarioAdm").focus();
+				return false;
+}
+					else if(usuarioADM!=admvalido){
+					window.alert("Usuário não encontrado no sistema da escola. Tente novamente");
+					document.getElementById("txtusuarioAdm").style.backgroundColor='#ff0000';
+					document.getElementById("txtusuarioAdm").value="";
+					document.getElementById("txtusuarioAdm").focus();
+					return false;
+					
+					}
+					else if(senhaADM==""){
+					window.alert("Digite sua senha!");
+					document.getElementById("txtsenhaAdm").style.backgroundColor='#ff0000';
+					document.getElementById("txtsenhaAdm").value="";
+					document.getElementById("txtsenhaAdm").focus();
+					return false;
+					}
+					else if(senhaADM!=senhavalida){
+					window.alert("Senha incorreta");
+					document.getElementById("txtsenhaAdm").style.backgroundColor='#ff0000';
+					document.getElementById("txtsenhaAdm").value="";
+					document.getElementById("txtsenhaAdm").focus();
+					return false;
+					
+					}
+				else{
+				
+				window.open('inicioAdm.html')
+
+				}
+
+				}
+				function esqsenha(){
+						window.open('esqsenha.html')
+				}
+				function cadastro(){
+						window.open('castro.html')
+				}
+
+<!--Depois colocar o if de achar user e senha no bd-->
+		</script>
+		<link rel="shortcut icon" href="ic_top_cursos _icone.ico" type="image/x-icon" />
+	</head>
+		<body style="background-image:url('sala.jpg')">
+			<h1 class="titulo">Entrar</h1><br /><br />
+
+		
+		<div class="formLogar" style="margin-left:530px;margin-top:50px;width:500px;height:400px;background-color:white">
+		<h1 style="font-family:sans-serif;padding-top:50px;font-size:50px;color:#303f9f;">Login ADM</h1>
+
+				<input type = "text" id = "txtusuarioAdm" size = "44" maxlength = "20"style="height:40px;font-size:20px;width:340px;padding-left:10px"placeholder="Usuário">
+			
+		
+				<input class="a"type = "password" id = "txtsenhaAdm" size = "44" maxlength = "42"style="height:40px;margin-top:10px;font-size:20px;width:340px;padding-left:10px"placeholder="Senha" /><br />
+		
+			<input type="submit" value = "FAZER LOGIN" style="width:355px;height:40px;margin-top:10px;background-color:#303f9f;border-style:none;color:white;font-size:15px" onClick="logarAdm()" ><BR/>
+			<input type="button" value = "ESQUECEU A SENHA?" style="width:175px;height:40px;margin-top:10px;background-color:#4169E1;border-style:none;color:white;font-size:15px"onClick="esqsenha()" >
+			<input type="button" value = "NÃO TEM CADASTRO?" style="width:175px;height:40px;margin-top:10px;background-color:#4169E1;border-style:none;color:white;font-size:15px" onClick="cadastro()">
+		</div>
+			<br /><br />
+		</body>
+</html>

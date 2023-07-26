@@ -1,0 +1,963 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Interface ADM</title>
+		<link id="escolherUsuario" href = "inicial.css" rel ="stylesheet" type ="text/css">
+		
+		
+		
+		<script type = "text/javascript">
+		function apenas(){
+		var mordecai = document.getElementById("mordecai").value;
+		var rigby= document.getElementById("rigby").value;
+		var margaret= document.getElementById("margaret").value;
+		var eileen= document.getElementById("eileen").value;
+		var a= document.getElementById("a").value;
+		var mi= document.getElementById("mi").value;
+		var za= document.getElementById("za").value;
+		var de= document.getElementById("de").value;
+		if(mordecai!="informatica"){
+		window.alert("Curso não correspondente ao ID Curso 1");
+		document.getElementById("mordecai").style.backgroundColor='#ff0000';
+		document.getElementById("mordecai").focus();
+		}else if(rigby!="PRAP1"){
+		window.alert("Matéria 'AULA' não corresponde ao curso de informática ou não existe no sistema");
+		document.getElementById("rigby").style.backgroundColor='#ff0000';
+		document.getElementById("rigby").focus();
+		}else if(margaret!="1"){
+		window.alert("ID 2 não correspondente ao curso de informática");
+		document.getElementById("margaret").style.backgroundColor='#ff0000';
+		document.getElementById("margaret").focus();
+		}else if(eileen!="11"){
+		window.alert("ID 11 não correspondente à matéria PRAP1");
+		document.getElementById("eileen").style.backgroundColor='#ff0000';
+		document.getElementById("eileen").focus();
+		}else if(a=="0" && mi=="0" && za=="0" && de=="0"){
+		window.open("inicioAdm1.html");
+		}
+		}
+
+		function umshow(){
+		var benson = document.getElementById("benson").value;
+		var skips= document.getElementById("skips").value;
+		var muscle= document.getElementById("muscle").value;
+		var man= document.getElementById("man").value;
+		var hi= document.getElementById("hi").value;
+		var five= document.getElementById("five").value;
+		var ghost= document.getElementById("ghost").value;
+		var power= document.getElementById("power").value;
+		document.getElementById("benson").style.backgroundColor='#ADD8E6';
+		document.getElementById("skips").style.backgroundColor='#ADD8E6';
+	
+		document.getElementById("muscle").style.backgroundColor='#ADD8E6';
+		document.getElementById("man").style.backgroundColor='#ADD8E6';
+		document.getElementById("hi").style.backgroundColor='#ADD8E6';
+		document.getElementById("five").style.backgroundColor='#ADD8E6';
+		document.getElementById("ghost").style.backgroundColor='#ADD8E6';
+			document.getElementById("power").style.backgroundColor='#ADD8E6';
+		if(benson!="informatica"){
+		window.alert("Curso não correspondente ao ID Curso 1");
+		document.getElementById("benson").style.backgroundColor='#ff0000';
+		document.getElementById("benson").focus();
+		}else if(skips!="BADA2"){
+		window.alert("Matéria 'AULA' não corresponde ao curso de informática ou não existe no sistema");
+		document.getElementById("skips").style.backgroundColor='#ff0000';
+		document.getElementById("skips").focus();
+		}else if(muscle!="INF2A"){
+		window.alert("'INF2E' não correspondente ao ID turma 43");
+		document.getElementById("muscle").style.backgroundColor='#ff0000';
+		document.getElementById("muscle").focus();
+		}else if(man!="Pedro da Silva"){
+		window.alert("Nome não correspondente ao código prof 98765");
+		document.getElementById("man").style.backgroundColor='#ff0000';
+		document.getElementById("man").focus();
+		}else if(hi!="1"){
+		window.alert("ID curso não correspondente ao curso de informática");
+		document.getElementById("hi").style.backgroundColor='#ff0000';
+		document.getElementById("hi").focus();
+		}else if(five!="15"){
+		window.alert("ID matéria não correspondente à matéria BADA2");
+		document.getElementById("five").style.backgroundColor='#ff0000';
+		document.getElementById("five").focus();
+		}else if(ghost!="43"){
+		window.alert("Código turma não correspondente à turma INF2A");
+		document.getElementById("ghost").style.backgroundColor='#ff0000';
+		document.getElementById("ghost").focus();
+		}else if(power!="98765"){
+		window.alert("Código prof não correspondente ao nome 'Pedro da Silva'");
+		document.getElementById("power").style.backgroundColor='#ff0000';
+		document.getElementById("power").focus();
+		}	
+		}
+		function xore(){
+		var al= document.getElementById("alvo").value;
+		var titulofinal = document.getElementById("xo").value;
+		var descrifinal =document.getElementById("xei").value;
+		document.getElementById("alvo").style.backgroundColor='white';
+		document.getElementById("xo").style.backgroundColor='white';
+		document.getElementById("xei").style.backgroundColor='white';
+		if(al=="l"){
+		window.alert("Selecione o alvo do aviso");
+		document.getElementById("alvo").style.backgroundColor='#ff0000';
+		document.getElementById("alvo").focus();
+		}else if(titulofinal==""){
+		window.alert("Digite um título!");
+		document.getElementById("xo").style.backgroundColor='#ff0000';
+		document.getElementById("xo").focus();
+		}else if(descrifinal==""){
+		window.alert("Descreva o aviso!");
+		document.getElementById("xei").style.backgroundColor='#ff0000';
+		document.getElementById("xei").focus();
+		}else{
+		window.alert("Aviso enviado!");
+		}
+		}
+		
+		function horprof(){
+		var espaaoo= document.getElementById("31").value;
+		var espaboo = document.getElementById("32").value;
+		var espacoo =document.getElementById("33").value; 
+		var espadoo =document.getElementById("34").value; 
+		var espaeoo =document.getElementById("35").value; 
+		var espafoo =document.getElementById("36").value; 
+		var espagoo =document.getElementById("37").value; 
+		var espahoo =document.getElementById("38").value; 
+		var espaioo =document.getElementById("39").value; 
+		var espajoo =document.getElementById("40").value; 
+		var espakoo =document.getElementById("41").value; 
+		var espaloo =document.getElementById("42").value; 
+		var espamoo =document.getElementById("43").value; 
+		var horario2 = document.getElementById("horario2").value;
+		var horarioprof= document.getElementById("horarioprof").value;
+		var dataprof= document.getElementById("dataprof").value;
+		var statusprof= document.getElementById("statusprof").value;
+		document.getElementById("31").style.backgroundColor='#ADD8E6';
+		document.getElementById("32").style.backgroundColor='#ADD8E6';
+		document.getElementById("33").style.backgroundColor='#ADD8E6';
+		document.getElementById("34").style.backgroundColor='#ADD8E6';
+		document.getElementById("35").style.backgroundColor='#ADD8E6';
+		document.getElementById("36").style.backgroundColor='#ADD8E6';
+		document.getElementById("37").style.backgroundColor='#ADD8E6';
+		document.getElementById("38").style.backgroundColor='#ADD8E6';
+		document.getElementById("39").style.backgroundColor='#ADD8E6';
+		document.getElementById("40").style.backgroundColor='#ADD8E6';
+		document.getElementById("41").style.backgroundColor='#ADD8E6';
+		document.getElementById("42").style.backgroundColor='#ADD8E6';
+		document.getElementById("43").style.backgroundColor='#ADD8E6';
+		document.getElementById("horario2").style.backgroundColor='#ADD8E6';
+		document.getElementById("horarioprof").style.backgroundColor='#ADD8E6';
+		document.getElementById("dataprof").style.backgroundColor='#ADD8E6';
+		document.getElementById("statusprof").style.backgroundColor='#ADD8E6';
+
+		if(espaaoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("31").style.backgroundColor='#ff0000';
+		document.getElementById("31").focus();
+		}else if(espaaoo=="PRAP1"){
+		window.alert("Outro professor já leciona PRAP1 nesse horário!");
+		document.getElementById("31").style.backgroundColor='#ff0000';
+		document.getElementById("31").value="";
+		document.getElementById("31").focus();
+		}else if(espaboo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("32").style.backgroundColor='#ff0000';
+		document.getElementById("32").focus();
+		}else if(espacoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("33").style.backgroundColor='#ff0000';
+		document.getElementById("33").focus();
+		}else if(espadoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("34").style.backgroundColor='#ff0000';
+		document.getElementById("34").focus();
+		}else if(espaeoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("35").style.backgroundColor='#ff0000';
+		document.getElementById("35").focus();
+		}else if(espafoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("36").style.backgroundColor='#ff0000';
+		document.getElementById("36").focus();
+		}else if(espagoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("37").style.backgroundColor='#ff0000';
+		document.getElementById("37").focus();
+		}else if(espahoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("38").style.backgroundColor='#ff0000';
+		document.getElementById("38").focus();
+		}else if(espaioo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("39").style.backgroundColor='#ff0000';
+		document.getElementById("39").focus();
+		}else if(espajoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("40").style.backgroundColor='#ff0000';
+		document.getElementById("40").focus();
+		}else if(espakoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("41").style.backgroundColor='#ff0000';
+		document.getElementById("41").focus();
+		}else if(espaloo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("42").style.backgroundColor='#ff0000';
+		document.getElementById("42").focus();
+		}else if(espamoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("43").style.backgroundColor='#ff0000';
+		document.getElementById("43").focus();
+		}else if(horario2==""){
+		window.alert("Digite o ID horário! 2 digitos");
+		document.getElementById("horario2").style.backgroundColor='#ff0000';
+		document.getElementById("horario2").focus();	
+		}else if(isNaN(horario2)){
+		window.alert("Digite o ID horário em números!");
+		document.getElementById("horario2").style.backgroundColor='#ff0000';
+		document.getElementById("horario2").value="";
+		document.getElementById("horario2").focus();
+		}else if(horario2=="10"){
+		window.alert("Esse ID já existe");
+		document.getElementById("horario2").style.backgroundColor='#ff0000';
+		document.getElementById("horario2").value="";
+		document.getElementById("horario2").focus();
+		}else if(horarioprof==""){
+		window.alert("Digite o código do professor!");
+		document.getElementById("horarioprof").style.backgroundColor='#ff0000';
+		document.getElementById("horarioprof").focus();
+		}else if(horarioprof=="12000"){
+		window.alert("Este código é referente a um professor não mais atuante na instituição");
+		document.getElementById("horarioprof").style.backgroundColor='#ff0000';
+		document.getElementById("horarioprof").value="";
+		document.getElementById("horarioprof").focus();
+		}else if(horarioprof=="99999"){
+		window.alert("Professor inexistente");
+		document.getElementById("horarioprof").style.backgroundColor='#ff0000';
+		document.getElementById("horarioprof").value="";
+		document.getElementById("horarioprof").focus();
+		}else if(dataprof==""){
+		window.alert("Digite a data de início da validade deste horário!");
+		document.getElementById("dataprof").style.backgroundColor='#ff0000';
+		document.getElementById("dataprof").value="";
+		document.getElementById("dataprof").focus();	
+		}else if(dataprof!="01/02/2020"){
+		window.alert("Data inválida");
+		document.getElementById("dataprof").style.backgroundColor='#ff0000';
+		document.getElementById("dataprof").value="";
+		document.getElementById("dataprof").focus();
+		}else if(statusprof==""){
+		window.alert("Defina o status deste horário: 'ativo' ou 'inativado' ");
+		document.getElementById("statusprof").style.backgroundColor='#ff0000';
+		document.getElementById("statusprof").focus();	
+
+		}else{
+		window.alert("Horário montado e enviado para o professor Pedro da Silva!");
+		}
+	}				
+
+		function horturma(){
+		var espaao = document.getElementById("1").value;
+		var espabo = document.getElementById("2").value;
+		var espaco =document.getElementById("3").value; 
+		var espado =document.getElementById("4").value; 
+		var espaeo =document.getElementById("5").value; 
+		var espafo =document.getElementById("6").value; 
+		var espago =document.getElementById("7").value; 
+		var espaho =document.getElementById("8").value; 
+		var espaio =document.getElementById("9").value; 
+		var espajo =document.getElementById("10").value; 
+		var espako =document.getElementById("11").value; 
+		var espalo =document.getElementById("12").value; 
+		var espamo =document.getElementById("13").value; 
+		var espano =document.getElementById("14").value; 
+		var espaoo =document.getElementById("15").value; 
+		var espapo =document.getElementById("16").value; 
+		var espaqo =document.getElementById("17").value; 
+		var esparo =document.getElementById("18").value; 
+		var espaso =document.getElementById("19").value; 
+		var espato =document.getElementById("20").value;
+		var horario1 = document.getElementById("horario1").value;
+		var horarioturma = document.getElementById("horarioturma").value;
+		var dataturma= document.getElementById("dataturma").value;
+		var statusturma= document.getElementById("statusturma").value;
+		document.getElementById("1").style.backgroundColor='#ADD8E6';
+		document.getElementById("2").style.backgroundColor='#ADD8E6';
+		document.getElementById("3").style.backgroundColor='#ADD8E6';
+		document.getElementById("4").style.backgroundColor='#ADD8E6';
+		document.getElementById("5").style.backgroundColor='#ADD8E6';
+		document.getElementById("6").style.backgroundColor='#ADD8E6';
+		document.getElementById("7").style.backgroundColor='#ADD8E6';
+		document.getElementById("8").style.backgroundColor='#ADD8E6';
+		document.getElementById("9").style.backgroundColor='#ADD8E6';
+		document.getElementById("10").style.backgroundColor='#ADD8E6';
+		document.getElementById("11").style.backgroundColor='#ADD8E6';
+		document.getElementById("12").style.backgroundColor='#ADD8E6';
+		document.getElementById("13").style.backgroundColor='#ADD8E6';
+		document.getElementById("14").style.backgroundColor='#ADD8E6';
+		document.getElementById("15").style.backgroundColor='#ADD8E6';
+		document.getElementById("16").style.backgroundColor='#ADD8E6';
+		document.getElementById("17").style.backgroundColor='#ADD8E6';
+		document.getElementById("18").style.backgroundColor='#ADD8E6';
+		document.getElementById("19").style.backgroundColor='#ADD8E6';
+		document.getElementById("20").style.backgroundColor='#ADD8E6';
+		document.getElementById("horario1").style.backgroundColor='#ADD8E6';
+		document.getElementById("horarioturma").style.backgroundColor='#ADD8E6';
+		document.getElementById("dataturma").style.backgroundColor='#ADD8E6';
+		document.getElementById("statusturma").style.backgroundColor='#ADD8E6';
+
+		if(espaao==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("1").style.backgroundColor='#ff0000';
+		document.getElementById("1").focus();
+		}else if(espabo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("2").style.backgroundColor='#ff0000';
+		document.getElementById("2").focus();
+		}else if(espaco==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("3").style.backgroundColor='#ff0000';
+		document.getElementById("3").focus();
+		}else if(espado==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("4").style.backgroundColor='#ff0000';
+		document.getElementById("4").focus();
+		}else if(espaeo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("5").style.backgroundColor='#ff0000';
+		document.getElementById("5").focus();
+		}else if(espafo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("6").style.backgroundColor='#ff0000';
+		document.getElementById("6").focus();
+		}else if(espago==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("7").style.backgroundColor='#ff0000';
+		document.getElementById("7").focus();
+		}else if(espaho==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("8").style.backgroundColor='#ff0000';
+		document.getElementById("8").focus();
+		}else if(espaio==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("9").style.backgroundColor='#ff0000';
+		document.getElementById("9").focus();
+		}else if(espajo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("10").style.backgroundColor='#ff0000';
+		document.getElementById("10").focus();
+		}else if(espako==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("11").style.backgroundColor='#ff0000';
+		document.getElementById("11").focus();
+		}else if(espalo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("12").style.backgroundColor='#ff0000';
+		document.getElementById("12").focus();
+		}else if(espamo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("13").style.backgroundColor='#ff0000';
+		document.getElementById("13").focus();
+		}else if(espano==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("14").style.backgroundColor='#ff0000';
+		document.getElementById("14").focus();
+		}else if(espaoo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("15").style.backgroundColor='#ff0000';
+		document.getElementById("15").focus();
+		}else if(espapo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("16").style.backgroundColor='#ff0000';
+		document.getElementById("16").focus();
+		}else if(espaqo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("17").style.backgroundColor='#ff0000';
+		document.getElementById("17").focus();
+		}else if(esparo==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("18").style.backgroundColor='#ff0000';
+		document.getElementById("18").focus();
+		}else if(espaso ==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("19").style.backgroundColor='#ff0000';
+		document.getElementById("19").focus();
+		}else if(espato ==""){
+		window.alert("Preencha todos os campos!");
+		document.getElementById("20").style.backgroundColor='#ff0000';
+		document.getElementById("20").focus();			
+		}else if(horario1==""){
+		window.alert("Digite o ID horário! 2 digitos");
+		document.getElementById("horario1").style.backgroundColor='#ff0000';
+		document.getElementById("horario1").focus();	
+		}else if(isNaN(horario1)){
+		window.alert("Digite o ID horário em números!");
+		document.getElementById("horario1").style.backgroundColor='#ff0000';
+		document.getElementById("horario1").value="";
+		document.getElementById("horario1").focus();
+		}else if(horario1=="10"){
+		window.alert("Esse ID já existe");
+		document.getElementById("horario1").style.backgroundColor='#ff0000';
+		document.getElementById("horario1").value="";
+		document.getElementById("horario1").focus();
+		}else if(horarioturma==""){
+		window.alert("Digite o código da turma!");
+		document.getElementById("horarioturma").style.backgroundColor='#ff0000';
+		document.getElementById("horarioturma").focus();
+		}else if(horarioturma=="39"){
+		window.alert("Essa turma foi encerrada em 2019");
+		document.getElementById("horarioturma").style.backgroundColor='#ff0000';
+		document.getElementById("horarioturma").value="";
+		document.getElementById("horarioturma").focus();
+		}else if(horarioturma=="90"){
+		window.alert("Turma inexistente");
+		document.getElementById("horarioturma").style.backgroundColor='#ff0000';
+		document.getElementById("horarioturma").value="";
+		document.getElementById("horarioturma").focus();
+		}else if(dataturma==""){
+		window.alert("Digite a data de início da validade deste horário!");
+		document.getElementById("dataturma").style.backgroundColor='#ff0000';
+		document.getElementById("dataturma").value="";
+		document.getElementById("dataturma").focus();	
+		}else if(dataturma!="01/02/2020"){
+		window.alert("Data inválida");
+		document.getElementById("dataturma").style.backgroundColor='#ff0000';
+		document.getElementById("dataturma").value="";
+		document.getElementById("dataturma").focus();
+		}else if(statusturma==""){
+		window.alert("Defina o status deste horário: 'ativo' ou 'inativado' ");
+		document.getElementById("statusturma").style.backgroundColor='#ff0000';
+		document.getElementById("statusturma").focus();	
+		}else{
+		window.alert("Horário montado e enviado para o INF2F!");
+		}
+	}				
+		function voyage(){
+		var codigop = document.getElementById("codigop").value;
+		var base = document.getElementById("cursodop").value; 
+		var base2 = document.getElementById("turmadop").value; 
+		document.getElementById("codigop").style.backgroundColor='white';
+		document.getElementById("cursodop").style.backgroundColor='white';
+		document.getElementById("turmadop").style.backgroundColor='white';
+		if(codigop==""){
+		window.alert("Digite o código do professor!");
+		document.getElementById("codigop").style.backgroundColor='#ff0000';
+		document.getElementById("codigop").value="";
+		document.getElementById("codigop").focus();
+		}else if(codigop!="98765"){
+		window.alert("Código não encontrado no sistema");
+		document.getElementById("codigop").style.backgroundColor='#ff0000';
+		document.getElementById("codigop").value="";
+		document.getElementById("codigop").focus();
+		}else if(base=="w"){
+		window.alert("Selecione o curso em que ele/ela leciona");
+		document.getElementById("cursodop").style.backgroundColor='#ff0000';
+		document.getElementById("cursodop").focus();
+		}else if(base2=="t"){
+		window.alert("Selecione as turmas para as quais ele/ela leciona");
+		document.getElementById("turmadop").style.backgroundColor='#ff0000';
+		document.getElementById("turmadop").focus();
+		
+		}else{
+		window.alert("Atribuição feita com sucessso: Professor Pedro Silva, curso informática, BADA2 - INF2A, PRAP3 - INF2F");
+		}
+		}
+
+		function tolete(){
+		var primeirovoce= document.getElementById("primeirovoce").value;
+		var depoisvoce= document.getElementById("depoisvoce").value;
+		document.getElementById("primeirovoce").style.backgroundColor='white';
+		document.getElementById("depoisvoce").style.backgroundColor='white';
+		if(primeirovoce==""){
+		window.alert("Digite o código(RM) do aluno");
+		document.getElementById("primeirovoce").style.backgroundColor='#ff0000';
+		document.getElementById("primeirovoce").value="";
+		document.getElementById("primeirovoce").focus();
+		}else if(isNaN(primeirovoce)){
+		window.alert("Digite o código/RM em números");
+		document.getElementById("primeirovoce").style.backgroundColor='#ff0000';
+		document.getElementById("primeirovoce").value="";
+		document.getElementById("primeirovoce").focus();
+		}else if(primeirovoce!="12345"){
+		window.alert("Código/RM não encontrado no sistema");
+		document.getElementById("primeirovoce").style.backgroundColor='#ff0000';
+		document.getElementById("primeirovoce").value="";
+		document.getElementById("primeirovoce").focus();
+		}else if(depoisvoce==""){
+		window.alert("Digite o ID da turma!");
+		document.getElementById("depoisvoce").style.backgroundColor='#ff0000';
+		document.getElementById("depoisvoce").value="";
+		document.getElementById("depoisvoce").focus();
+		}else if(depoisvoce=="044"){
+		window.alert("Turma 044 encerrada em 2018");
+		document.getElementById("depoisvoce").style.backgroundColor='#ff0000';
+		document.getElementById("depoisvoce").value="";
+		document.getElementById("depoisvoce").focus();
+		}else if(depoisvoce=="090"){
+		window.alert("Turma inexistente");
+		document.getElementById("depoisvoce").style.backgroundColor='#ff0000';
+		document.getElementById("depoisvoce").value="";
+		document.getElementById("depoisvoce").focus();
+		}else{
+		window.alert("Mateus Silva atribuído ao INF2F!");
+		}
+		}
+
+		function adicionarcurso(){
+		var nomedocurso = document.getElementById("nomedocurso").value;
+		var iddocurso = document.getElementById("iddocurso").value;
+		document.getElementById("nomedocurso").style.backgroundColor='white';
+		document.getElementById("iddocurso").style.backgroundColor='white';
+		if(nomedocurso==""){
+		window.alert("Digite o nome do curso");
+		document.getElementById("nomedocurso").style.backgroundColor='#ff0000';
+		document.getElementById("nomedocurso").value="";
+		document.getElementById("nomedocurso").focus();
+		}else if(nomedocurso=="Informatica"){
+		window.alert("Curso informatica já adicionado");
+		document.getElementById("nomedocurso").style.backgroundColor='#ff0000';
+		document.getElementById("nomedocurso").value="";
+		document.getElementById("nomedocurso").focus();
+		}else if(iddocurso==""){
+		window.alert("Crie um ID para o curso! Somente 1 digito");
+		document.getElementById("iddocurso").style.backgroundColor='#ff0000';
+		document.getElementById("iddocurso").value="";
+		document.getElementById("iddocurso").focus();
+		}else if(isNaN(iddocurso)){
+		window.alert("Digite o ID em número");
+		document.getElementById("iddocurso").style.backgroundColor='#ff0000';
+		document.getElementById("iddocurso").value="";
+		document.getElementById("iddocurso").focus();
+		}else if(iddocurso=="1"){
+		window.alert("ID 1 já é para o curso de informática");
+		document.getElementById("iddocurso").style.backgroundColor='#ff0000';
+		document.getElementById("iddocurso").value="";
+		document.getElementById("iddocurso").focus();
+		}else{
+		window.alert("Curso adicionado!");
+		}
+		}
+
+		function adicionarmateria(){
+		var nomemateria= document.getElementById("nomemateria").value;
+		var idmateria = document.getElementById("idmateria").value;
+		var qualcurso= document.getElementById("Deusnuncameabandonou").value;
+		document.getElementById("nomemateria").style.backgroundColor='white';
+		document.getElementById("idmateria").style.backgroundColor='white';
+		document.getElementById("Deusnuncameabandonou").style.backgroundColor='white';
+		if(nomemateria==""){
+		window.alert("Digite a sigla da matéria!");
+		document.getElementById("nomemateria").style.backgroundColor='#ff0000';
+		document.getElementById("nomemateria").value="";
+		document.getElementById("nomemateria").focus();
+		}else if(idmateria==""){
+		window.alert("Digite o ID da matéria! 3 digitos");
+		document.getElementById("idmateria").style.backgroundColor='#ff0000';
+		document.getElementById("idmateria").value="";
+		document.getElementById("idmateria").focus();
+		}else if(isNaN(idmateria)){
+		window.alert("Digite o ID da matéria em números!");
+		document.getElementById("idmateria").style.backgroundColor='#ff0000';
+		document.getElementById("idmateria").value="";
+		document.getElementById("idmateria").focus();
+		}else if(qualcurso=="oi"){
+		window.alert("Escolha um curso para alocar tal matéria");
+		document.getElementById("Deusnuncameabandonou").style.backgroundColor='#ff0000';
+	
+		document.getElementById("Deusnuncameabandonou").focus();
+		}else if(qualcurso=="io"){
+			window.alert("Matéria adicionada!");
+		
+		}
+		}
+		
+		function turma(){
+		var turmaoficial="INF2F"
+		var anooficial ="2020"
+		var idoficial="045"
+		var turma =  document.getElementById("turma").value;
+		document.getElementById("turma").style.backgroundColor='white';
+		var ano=  document.getElementById("ano").value;
+		document.getElementById("ano").style.backgroundColor='white';
+		var id=  document.getElementById("id").value;
+		document.getElementById("id").style.backgroundColor='white';
+		if(turma==""){
+		window.alert("Digite o nome da turma!");
+		document.getElementById("turma").style.backgroundColor='#ff0000';
+		document.getElementById("turma").value="";
+		document.getElementById("turma").focus();
+		}else if(ano==""){
+		window.alert("Digite o ano da turma! Ex:2020");
+		document.getElementById("ano").style.backgroundColor='#ff0000';
+		document.getElementById("ano").value="";
+		document.getElementById("ano").focus();
+		}else if(turma=="INF2F" && ano=="2020"){
+		window.alert("Turma INF2F já criada para o ano de 2020");
+		document.getElementById("turma").style.backgroundColor='#ff0000';
+		document.getElementById("ano").style.backgroundColor='#ff0000';
+		}else if(id==""){
+		window.alert("Digite o id único da turma! 3 digitos");
+		document.getElementById("id").style.backgroundColor='#ff0000';
+		document.getElementById("id").value="";
+		document.getElementById("id").focus();
+		}else if(id==idoficial){
+		window.alert("ID já utilizado para outra turma. ID precisa ser único!");
+		document.getElementById("id").style.backgroundColor='#ff0000';
+		document.getElementById("id").value="";
+		document.getElementById("id").focus();
+		}else{
+		window.alert("Turma adicionada");
+		}
+		}
+
+		function ativa(){
+		var teste="98765";
+		var cod=  document.getElementById("cod").value;
+		var option=  document.getElementById("option").value;
+		document.getElementById("cod").style.backgroundColor='white';
+		document.getElementById("option").style.backgroundColor='white';
+		if(cod==""){
+		window.alert("Digite o código do usuário!");
+		document.getElementById("cod").style.backgroundColor='#ff0000';
+		document.getElementById("cod").value="";
+		document.getElementById("cod").focus();
+		}else if(cod!=teste){
+		window.alert("Código não encontrado no sistema");
+		document.getElementById("cod").style.backgroundColor='#ff0000';
+		document.getElementById("cod").value="";
+		document.getElementById("cod").focus();
+		}else if(option=="x"){
+		window.alert("Selecione um status!");
+		document.getElementById("option").style.backgroundColor='#ff0000';
+		document.getElementById("option").value="";
+		document.getElementById("option").focus();
+		}else if(option=="0"){
+		window.alert("Usuário ativo");
+		}else if(option=="1"){
+		window.alert("Usuário desativado");
+		}
+		}
+		
+		
+
+		function user(){
+		var nome =  document.getElementById("nome").value;
+		var codigo =  document.getElementById("codigo").value;
+		var cpf=  document.getElementById("cpf").value;
+		var rg=  document.getElementById("rg").value;
+		var email=  document.getElementById("email").value;
+		var cargo=  document.getElementById("cargo").value;
+		var login=  document.getElementById("login").value;
+		var nivel =  document.getElementById("select").value;
+		var user=  document.getElementById("user").value;
+		var senha=  document.getElementById("senha").value;
+		var foto=  document.getElementById("foto").value;
+		document.getElementById("nome").style.backgroundColor='white';
+		document.getElementById("codigo").style.backgroundColor='white';
+		document.getElementById("cpf").style.backgroundColor='white';
+		document.getElementById("rg").style.backgroundColor='white';
+		document.getElementById("email").style.backgroundColor='white';
+		document.getElementById("cargo").style.backgroundColor='white';
+		document.getElementById("login").style.backgroundColor='white';
+		document.getElementById("select").style.backgroundColor='white';
+		document.getElementById("user").style.backgroundColor='white';
+		document.getElementById("senha").style.backgroundColor='white';	
+		document.getElementById("foto").style.backgroundColor='white';
+	
+		document.getElementById("senha").style.backgroundColor='white';	
+		document.getElementById("foto").style.backgroundColor='white';
+		if(nome==""){
+			window.alert("Digite o nome!");
+			document.getElementById("nome").style.backgroundColor='#ff0000';
+			document.getElementById("nome").value="";
+			document.getElementById("nome").focus();
+			return false;
+		}else if(codigo==""){
+			window.alert("Digite o código!");
+			document.getElementById("codigo").style.backgroundColor='#ff0000';
+			document.getElementById("codigo").value="";
+			document.getElementById("codigo").focus();
+			return false;
+		}else if(cpf==""){
+			window.alert("Digite o CPF!")
+			document.getElementById("cpf").style.backgroundColor='#ff0000';
+			document.getElementById("cpf").value="";
+			document.getElementById("cpf").focus();
+return false;
+		}else if(rg==""){
+			window.alert("Digite o RG!")
+			document.getElementById("rg").style.backgroundColor='#ff0000';
+			document.getElementById("rg").value="";
+			document.getElementById("rg").focus();
+return false;
+		}else if(email==""){
+			window.alert("Digite o email!")
+			document.getElementById("email").style.backgroundColor='#ff0000';
+			document.getElementById("email").value="";
+			document.getElementById("email").focus();
+return false;
+		}else if(cargo==""){
+			window.alert("Digite o cargo!")
+			document.getElementById("cargo").style.backgroundColor='#ff0000';
+			document.getElementById("cargo").value="";
+			document.getElementById("cargo").focus();
+return false;
+		}else if(login==""){
+			window.alert("Crie um ID Login único!");
+			document.getElementById("login").style.backgroundColor='#ff0000';
+			document.getElementById("login").value="";
+			document.getElementById("login").focus();
+return false;
+		}else if(nivel=="x"){
+			window.alert("Selecione o nível de acesso!");
+			document.getElementById("select").style.backgroundColor='#ff0000';
+			document.getElementById("select").value="";
+			document.getElementById("select").focus();
+			return false;
+		}
+		else if(user==""){
+			window.alert("Digite o nome de usuário");
+			document.getElementById("user").style.backgroundColor='#ff0000';
+			document.getElementById("user").value="";
+			document.getElementById("user").focus();
+		return false;
+		}else if(senha==""){
+			window.alert("Crie uma senha inicial para esse usuário!");
+			document.getElementById("senha").style.backgroundColor='#ff0000';
+			document.getElementById("senha").value="";
+			document.getElementById("senha").focus();
+		return false;
+		}else if(foto==""){
+			window.alert("Coloque uma foto!");
+			document.getElementById("foto").style.backgroundColor='#ff0000';
+			document.getElementById("foto").value="";
+			document.getElementById("foto").focus();
+		return false;
+		}else{
+		window.alert("Usuário adicionado com sucesso!");
+		}
+}
+
+		function sair(){
+		window.open('index.html');
+		}
+			
+				function dadosAdm(){
+		window.open('dadosAdm.html');
+		}
+function consulta(){
+		window.open('consulta.html');
+		}
+
+		function calenAdm(){
+		window.open('calenAdm.html');
+		}
+		function adicionarUsuario(){
+			window.alert('Usuário adicionado. Ao se cadastrar em sua interface, o usuário receberá seu login no email que foi adicionado aqui.');
+			}
+			var expanded = false;
+
+			function showCheckboxes() {
+			  var checkboxes = document.getElementById("checkboxes");
+			  if (!expanded) {
+				checkboxes.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes2() {
+			  var checkboxes2 = document.getElementById("checkboxes2");
+			  if (!expanded) {
+				checkboxes2.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes2.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes3() {
+			  var checkboxes3 = document.getElementById("checkboxes3");
+			  if (!expanded) {
+				checkboxes3.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes3.style.display = "none";
+				expanded = false;
+			  }
+			}
+			
+		</script>
+		<style>
+
+.vertical-menu {
+  width:290px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #c0c0c0;
+}
+
+.vertical-menu a.active {
+  background-color: #c0c0c0;
+  color: black;
+}
+.vertical-menu a.active2 {
+  background-color:#303f9f;
+  color: black;
+  margin-top:-5px;
+}
+</style>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size:20px;
+  
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color:black;
+  font-family:sans-serif;
+  font-size:20px;
+}
+</style>
+		<link rel="shortcut icon" href="ic_top_cursos _icone.ico" type="image/x-icon" />
+	</head>
+		<body class="body"> 
+<h1 class="tituloInicioADM">Interface&nbsp;ADM</h1>
+				<h1 class="inicioTitulo" style="margin-left:330px">&nbsp;</h1>
+			<div style="width:290px;height:100%;background-color:#E8E8E8;color:#EEEEE0;margin-top:-150px;margin-left:-10px;position:fixed">
+			
+				<img src = 'user.png' style="height:250px;width:290px;">
+			
+	
+
+<div class="vertical-menu">
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;color:white;text-align:center">João da Silva</a>
+
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;background-color:#D3D3D3;color:#444;text-align:center">Secretário</a>
+
+<a href="dadosAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Dados</a>
+
+
+<a href="calenAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Calendário</a>
+
+<a href="consulta.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Consulta de dados</a>
+
+
+<a href="index.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Sair</a>n>
+
+  
+</div>
+			
+  
+</div>
+			
+			<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+			
+		<div class="divInicioADM" style="margin-left:350px;margin-top:-100px;width:1000px">
+		<p class="pPanorama" style="padding-left:80px;padding-top:20px">Alterar/deletar relação curso-matéria-turma-professor</p>
+		<li class="pMelhoresNotas"style="padding-left:30px;text-align:center">Para deletar um registro, digite 0 nos quatro campos referentes a ele</li>
+		<li class="pMelhoresNotas"style="padding-left:30px;text-align:center">Para alterar um registro, digite um novo registro por cima do campo desejado</li>
+		<table border="1" style="margin-left:270px;padding-top:0px;">
+				<table border="1" style="margin-left:10px;padding-top:0px">
+				<tr>
+				<th>Curso</th>
+				<th>Sigla matéria</th>
+				<th>Nome turma</th>
+				<th>Nome professor
+				<th>ID curso</th>
+				<th>ID matéria</th>
+				<th>Código turma</th>
+				<th>Código professor</th>
+				</tr>
+				<tr style="text-align:center">
+				<td><input type="text-box" id="benson"class="txtbox2" size="12" maxlength="50" placeholder="Informática"></td>
+				<td><input type="text-box" id="skips"class="txtbox2" size="12" maxlength="50" placeholder="BADA2"></td>
+				<td><input type="text-box" id="muscle"class="txtbox2" size="12" maxlength="50" placeholder="INF2A"></td>
+				<td><input type="text-box" id="man"class="txtbox2" size="12" maxlength="50" placeholder="Pedro da Silva"></td>
+				<td><input type="text-box" id="hi"class="txtbox2" size="12" maxlength="50" placeholder="1"></td>
+				<td><input type="text-box" id="five"class="txtbox2" size="12" maxlength="50" placeholder="15"></td>
+				<td><input type="text-box" id="ghost"class="txtbox2" size="12" maxlength="50" placeholder="45"></td>
+				<td><input type="text-box" id="power"class="txtbox2" size="12" maxlength="50" placeholder="98765"></td>
+				
+				</tr>
+				<tr style="text-align:center">
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="Informática"></td>
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="PRAP3"></td>
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="INF2F"></td>
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="Pedro da Silva"></td>
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="1"></td>
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="13"></td>
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="45"></td>
+				<td><input type="text-box" id="placeholder-text"class="txtbox2" size="12" maxlength="50" placeholder="98765"></td>
+				
+				
+				
+				</tr>
+				
+				
+				
+			
+				</table>
+				
+				
+			
+				</table>
+		<input type="button" class="adicionarUsuario" value="Alterar dados" onclick="umshow()"style="margin-left:400px"/><a href = "inicioAdm1.html" class="adicionarUsuario" style="margin-left:10px;margin-top:10px">Voltar</a>
+		<br/><br/>
+		</div>
+		
+		
+		
+		
+			
+		
+		
+		</body>
+		
+</html>

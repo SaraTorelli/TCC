@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Recuperar senha ADM</title>
+		<link id="loginADM" href = "inicial.css" rel ="stylesheet" type ="text/css">
+		<script type = "text/javascript">
+		
+		function enviar(){
+		var cpf =  document.getElementById("cpfadm").value;
+		var codigo=  document.getElementById("codigoadm").value;
+		var caraccpf = cpf.length;
+		var caraccodigo = codigo.length;
+		var cpfvalido = "12345678910";
+		var codigovalido ="10132";
+		document.getElementById("cpfadm").style.backgroundColor='#ffffff';
+		document.getElementById("codigoadm").style.backgroundColor='#ffffff';
+		
+		if(cpf==""){
+			window.alert("Digite seu CPF!");
+			document.getElementById("cpfadm").style.backgroundColor='#ff0000';
+			document.getElementById("cpfadm").value="";
+			document.getElementById("cpfadm").focus();
+			return false;
+					}
+		else if (isNaN(cpf)){
+			window.alert("Digite seu CPF em números");
+			document.getElementById("cpfadm").style.backgroundColor='#ff0000';
+			document.getElementById("cpfadm").value="";
+			document.getElementById("cpfadm").focus();
+			return false;
+			}
+		else if(caraccpf<11){
+			window.alert("Digite seu CPF completo");
+			document.getElementById("cpfadm").style.backgroundColor='#ff0000';
+			document.getElementById("cpfadm").value="";
+			document.getElementById("cpfadm").focus();
+			return false;
+					}
+		else if(cpf!=cpfvalido){
+			window.alert("CPF não encontrado no sistema da escola");
+			document.getElementById("cpfadm").style.backgroundColor='#ff0000';
+			document.getElementById("cpfadm").value="";
+			document.getElementById("cpfadm").focus();
+			return false;
+					}
+		else if(codigo==""){
+			window.alert("Digite seu código!");
+			document.getElementById("codigoadm").style.backgroundColor='#ff0000';
+			document.getElementById("codigoadm").value="";
+			document.getElementById("codigoadm").focus();
+			return false;
+					}
+		else if(isNaN(codigo)){
+			window.alert("Digite seu código em números!");
+			document.getElementById("codigoadm").style.backgroundColor='#ff0000';
+			document.getElementById("codigoadm").value="";
+			document.getElementById("codigoadm").focus();
+			return false;
+					}
+		else if(caraccodigo<5){
+			window.alert("Digite seu código completo!");
+			document.getElementById("codigoadm").style.backgroundColor='#ff0000';
+			document.getElementById("codigoadm").value="";
+			document.getElementById("codigoadm").focus();
+			return false;
+					}
+		else if(codigo!=codigovalido){
+			window.alert("Código não encontrado no sistema da escola")
+			document.getElementById("codigoadm").style.backgroundColor='#ff0000';
+			document.getElementById("codigoadm").value="";
+			document.getElementById("codigoadm").focus();
+			return false;
+					}
+		else{
+			window.alert("Dados compatíveis! Suas informações de login foram enviadas ao seu email cadastrado na escola");
+			document.getElementById("cpfadm").value="";
+			document.getElementById("codigoadm").value="";
+			
+}
+}
+
+
+<!--Depois colocar o if de achar user e senha no bd-->
+		</script>
+		<link rel="shortcut icon" href="ic_top_cursos _icone.ico" type="image/x-icon" />
+	</head>
+		<body style="background-image:url('sala.jpg')">
+			<h1 class="titulo">Entrar</h1><br /><br />
+
+		
+		<div  class="formLogar" style="margin-left:550px;margin-top:50px;width:500px;height:400px;background-color:white">
+		<h1 style="font-family:sans-serif;padding-top:50px;font-size:50px;color:#303f9f;">Recuperar acesso</h1>
+		<p style="font-family:sans-serif;font-size:25px;color:#303f9f;margin-top:-20px;WIDTH:400PX;MARGIN-LEFT:50px">Confirme seu CPF e Código para receber nova senha no seu email</p>
+				<input type="text" id="cpfadm" size = "44" maxlength = "11" style="height:40px;font-size:20px;width:340px;padding-left:10px"placeholder="CPF Ex:12345678900";>
+	
+		<input class="a"type = "text" id = "codigoadm" size = "44" maxlength = "5"style="height:40px;margin-top:10px;font-size:20px;width:340px;padding-left:10px"placeholder="Código" /><br />
+		
+			<input type="submit" value = "ENVIAR NOVA SENHA" style="width:355px;height:40px;margin-top:10px;background-color:#303f9f;border-style:none;color:white;font-size:15px" onclick="enviar();" ><BR/>
+
+		</div>
+			<br /><br />
+		</body>
+</html>

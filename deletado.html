@@ -1,0 +1,302 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Usuário deletado</title>
+		<link id="escolherUsuario" href = "inicial.css" rel ="stylesheet" type ="text/css">
+		<script type = "text/javascript">
+		function user(){
+		var nome =  document.getElementById("nome").value;
+		var codigo =  document.getElementById("codigo").value;
+		var cpf=  document.getElementById("cpf").value;
+		var rg=  document.getElementById("rg").value;
+		var email=  document.getElementById("email").value;
+		var cargo=  document.getElementById("cargo").value;
+		var login=  document.getElementById("login").value;
+		var nivel =  document.getElementById("select").value;
+		var user=  document.getElementById("user").value;
+		var senha=  document.getElementById("senha").value;
+		var foto=  document.getElementById("foto").value;
+		document.getElementById("nome").style.backgroundColor='white';
+		document.getElementById("codigo").style.backgroundColor='white';
+		document.getElementById("cpf").style.backgroundColor='white';
+		document.getElementById("rg").style.backgroundColor='white';
+		document.getElementById("email").style.backgroundColor='white';
+		document.getElementById("cargo").style.backgroundColor='white';
+		document.getElementById("login").style.backgroundColor='white';
+		document.getElementById("select").style.backgroundColor='white';
+		document.getElementById("user").style.backgroundColor='white';
+		document.getElementById("senha").style.backgroundColor='white';	
+		document.getElementById("foto").style.backgroundColor='white';
+		document.getElementById("select").style.backgroundColor='white';
+		document.getElementById("senha").style.backgroundColor='white';	
+		document.getElementById("foto").style.backgroundColor='white';
+		if(nome==""){
+			window.alert("Digite o nome!");
+			document.getElementById("nome").style.backgroundColor='#ff0000';
+			document.getElementById("nome").value="";
+			document.getElementById("nome").focus();
+			return false;
+		}else if(codigo==""){
+			window.alert("Digite o código!");
+			document.getElementById("codigo").style.backgroundColor='#ff0000';
+			document.getElementById("codigo").value="";
+			document.getElementById("codigo").focus();
+			return false;
+		}else if(cpf==""){
+			window.alert("Digite o CPF!")
+			document.getElementById("cpf").style.backgroundColor='#ff0000';
+			document.getElementById("cpf").value="";
+			document.getElementById("cpf").focus();
+return false;
+		}else if(rg==""){
+			window.alert("Digite o RG!")
+			document.getElementById("rg").style.backgroundColor='#ff0000';
+			document.getElementById("rg").value="";
+			document.getElementById("rg").focus();
+return false;
+		}else if(email==""){
+			window.alert("Digite o email!")
+			document.getElementById("email").style.backgroundColor='#ff0000';
+			document.getElementById("email").value="";
+			document.getElementById("email").focus();
+return false;
+		}else if(cargo==""){
+			window.alert("Digite o cargo!")
+			document.getElementById("cargo").style.backgroundColor='#ff0000';
+			document.getElementById("cargo").value="";
+			document.getElementById("cargo").focus();
+return false;
+		}else if(login==""){
+			window.alert("Crie um ID Login único!");
+			document.getElementById("login").style.backgroundColor='#ff0000';
+			document.getElementById("login").value="";
+			document.getElementById("login").focus();
+return false;
+		}else if(nivel=="x"){
+			window.alert("Selecione o nível de acesso!");
+			document.getElementById("select").style.backgroundColor='#ff0000';
+			document.getElementById("select").value="";
+			document.getElementById("select").focus();
+			return false;
+		}
+		else if(user==""){
+			window.alert("Digite o nome de usuário");
+			document.getElementById("user").style.backgroundColor='#ff0000';
+			document.getElementById("user").value="";
+			document.getElementById("user").focus();
+		return false;
+		}else if(senha==""){
+			window.alert("Crie uma senha inicial para esse usuário!");
+			document.getElementById("senha").style.backgroundColor='#ff0000';
+			document.getElementById("senha").value="";
+			document.getElementById("senha").focus();
+		return false;
+		}else if(foto==""){
+			window.alert("Coloque uma foto!");
+			document.getElementById("foto").style.backgroundColor='#ff0000';
+			document.getElementById("foto").value="";
+			document.getElementById("foto").focus();
+		return false;
+		}else{
+		window.alert("Usuário adicionado com sucesso!");
+		}
+}
+
+		function sair(){
+		window.open('index.html');
+		}
+			
+				function dadosAdm(){
+		window.open('dadosAdm.html');
+		}
+function consulta(){
+		window.open('consulta.html');
+		}
+
+		function calenAdm(){
+		window.open('calenAdm.html');
+		}
+		function adicionarUsuario(){
+			window.alert('Usuário adicionado. Ao se cadastrar em sua interface, o usuário receberá seu login no email que foi adicionado aqui.');
+			}
+			var expanded = false;
+
+			function showCheckboxes() {
+			  var checkboxes = document.getElementById("checkboxes");
+			  if (!expanded) {
+				checkboxes.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes2() {
+			  var checkboxes2 = document.getElementById("checkboxes2");
+			  if (!expanded) {
+				checkboxes2.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes2.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes3() {
+			  var checkboxes3 = document.getElementById("checkboxes3");
+			  if (!expanded) {
+				checkboxes3.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes3.style.display = "none";
+				expanded = false;
+			  }
+			}
+			
+		</script>
+		<style>
+
+.vertical-menu {
+  width:290px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #c0c0c0;
+}
+
+.vertical-menu a.active {
+  background-color: #c0c0c0;
+  color: black;
+}
+.vertical-menu a.active2 {
+  background-color:#303f9f;
+  color: black;
+  margin-top:-5px;
+}
+</style>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size:20px;
+  
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+</style>
+		<link rel="shortcut icon" href="ic_top_cursos _icone.ico" type="image/x-icon" />
+	</head>
+		<body class="body">
+			<h1 class="tituloInicioADM">Alterar&nbsp;dados&nbsp;usuário</h1>
+				<h1 class="inicioTitulo" style="margin-left:330px">&nbsp;</h1>
+			<div style="width:290px;height:100%;background-color:#E8E8E8;color:#EEEEE0;margin-top:-150px;margin-left:-10px;position:fixed;z-index:1">
+			
+				<img src = 'user.png' style="height:250px;width:290px;">
+			
+	
+
+<div class="vertical-menu">
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;color:white;text-align:center">João da Silva</a>
+
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;background-color:#D3D3D3;color:#444;text-align:center">Secretário</a>
+<a href="inicioAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Início</a>
+<a href="dadosAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Dados</a>
+
+
+<a href="calenAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Calendário</a>
+
+<a href="consulta.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Consulta</a>
+
+<a href="index.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Sair</a>n>
+
+  
+</div>
+			
+  
+</div>
+			
+			<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+			<div class="divInicioADM" style="margin-left:383px">
+		<p class="pPanorama" style="padding-left:80px;padding-top:20px">Usuário deletado!</p>
+		<p class="pMelhoresNotas"style="padding-left:30px;padding-top:-35px">Nome:&nbsp;<input type="text-box" id="nome" class="txtbox" size="50" maxlength="50"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px" >Código usuário:&nbsp;<span style="font-size:15px">5 digitos</span>
+		<input type="text-box" id="codigo" class="txtbox" size="5"maxlength="5" ></p>
+	
+		<p class="pMelhoresNotas"style="padding-left:30px">CPF:&nbsp;<input type="text-box" id="cpf"class="txtbox" maxlength="11" ></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">RG:&nbsp;<input type="text-box" id="rg" class="txtbox" maxlength="9"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Email. :&nbsp;<input type="text-box" id="email" style="width:400px"class="txtbox" maxlength="50" ></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Sexo:
+		<label class="containerRadio">Masculino
+		  <input type="radio"  id = "radsex" name = "gsex" checked = "checked" value = "m">
+		  <span class="checkmarkRadio"></span>
+		</label>
+		<label class="containerRadio">Feminino
+		  <input type="radio" id = "radsex1" name = "gsex" value = "f" >
+		  <span class="checkmarkRadio"></span>
+		</label>
+		<p class="pMelhoresNotas"style="padding-left:30px">Cargo:&nbsp;<input type="text-box" id="cargo" class="txtbox" maxlength="11"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">ID Login:&nbsp;<span style="font-size:15px">5 digitos:&nbsp;<input type="text-box" id="login"size="5"class="txtbox" maxlength="5"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Nível de acesso.:
+		<select id="select"class="select">
+			<option value = "x" class="select">Nível de acesso</option>
+			<option value = "2" class="select">Professor</option>
+			
+			<option value = "1" class="select">Aluno</option>
+			
+			<option value = "3" class="select">ADM</option>
+		</select>
+		</p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Nome usuário:&nbsp;<span style="font-size:15px">(Formato: nomeusuario_códigousuario)</span>&nbsp;<input type="text-box" id="user" class="txtbox" maxlength="50"></p>
+		<p class="pMelhoresNotas"style="padding-left:30px">Senha usuário:&nbsp;<input type="text-box"  id="senha" class="txtbox" maxlength="50"></p>
+			<p class="pMelhoresNotas"style="padding-left:30px">Foto usuário:
+		<input type="file" id="foto" style="height:30px;width:500px"/>
+		<br/><br/>
+<a href = "inicioAdm.html" class="adicionarUsuario" style="margin-left:420px;margin-top:10px">Voltar</a>
+		</p><br/>
+		</div><br/><br/><br/><br/><br/>
+
+		
+		</body>
+		
+</html>

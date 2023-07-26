@@ -1,0 +1,978 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Consulta de dados</title>
+		<link id="escolherUsuario" href = "inicial.css" rel ="stylesheet" type ="text/css">
+		<script type = "text/javascript">
+				function dadosAdm(){
+		window.open('dadosAdm.html');
+		}
+function sair(){
+		window.open('index.html');
+		}
+
+		function calenAdm(){
+		window.open('calenAdm.html');
+		}
+		function adicionarUsuario(){
+			window.alert('Usuário adicionado. Ao se cadastrar em sua interface, o usuário receberá seu login no email que foi adicionado aqui.');
+			}
+			var expanded = false;
+
+			function showCheckboxes() {
+			  var checkboxes = document.getElementById("checkboxes");
+			  if (!expanded) {
+				checkboxes.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes2() {
+			  var checkboxes2 = document.getElementById("checkboxes2");
+			  if (!expanded) {
+				checkboxes2.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes2.style.display = "none";
+				expanded = false;
+			  }
+			}
+			function showCheckboxes3() {
+			  var checkboxes3 = document.getElementById("checkboxes3");
+			  if (!expanded) {
+				checkboxes3.style.display = "block";
+				expanded = true;
+			  } else {
+				checkboxes3.style.display = "none";
+				expanded = false;
+			  }
+			}
+		
+
+}
+			
+		</script>
+		<style>
+.vertical-menu {
+  width:290px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: #c0c0c0;
+}
+
+.vertical-menu a.active {
+  background-color: #c0c0c0;
+  color: black;
+}
+.vertical-menu a.active2 {
+  background-color:#303f9f;
+  color: black;
+  margin-top:-5px;
+}
+</style>
+<style>
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  font-size:20px;
+  
+}
+
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+</style>
+		<link rel="shortcut icon" href="ic_top_cursos _icone.ico" type="image/x-icon" />
+	</head>
+		<body class="body">
+			<h1 class="tituloInicioADM">Consulta</h1>
+				<h1 class="inicioTitulo" style="margin-left:300px">Consulta ao banco de dados</h1>
+			<div style="width:290px;height:100%;background-color:#E8E8E8;color:#EEEEE0;margin-top:-150px;margin-left:-10px;">
+			
+				<img src = 'user.png' style="height:250px;width:290px;">
+			
+	
+
+<div class="vertical-menu">
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;color:white;text-align:center">João da Silva</a>
+
+<a href="#" class="active2" style="font-size:20px;font-family:sans-serif;background-color:#D3D3D3;color:#444;text-align:center">Secretário</a>
+
+<a href="inicioAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Início</a>
+
+
+<a href="dadosAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Dados</a>
+
+<a href="calenAdm.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Calendário</a>
+
+<a href="index.html" class="accordion" style="font-size:20px;font-family:sans-serif;color:#444;width:87%;padding:18px">Sair</a>
+
+  
+</div>
+			
+  
+</div>
+<table border="1" style="margin-left:400px;padding-top:-10px;margin-top:-450px;width:1000px">
+<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar usuário..."/> <a href="consulta1.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+		<tr>
+			<th>RM</th>
+			<th>Nome</th>
+			<th>Foto</th>
+			<th>CPF</th>
+			<th>RG</th>
+			<th>Email</th>
+			<th>Sexo</th>
+			<th>Cargo</th>
+		</tr>
+		<tr>
+		<td>12345</td>
+		<td>Mateus Silva</td>
+		<td>mateus12345.jpg</td>
+		<td>112.233.445-00</td>
+		<td>00.112.233-0</td>
+		<td>mateus12345@email.com</td>
+		<td>Masculino</td>
+		<td>Estudante</td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+		</tr>
+		</table>
+		<br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+		<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar login por RM/Código..."/> <a href="consulta2.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+		<tr>
+			<th>ID Login</th>
+			<th>RM</th>		
+			<th>Usuário</th>
+			<th>Senha</th>
+			<th>Nível de acesso</th>
+			<th>Status login</th>
+		</tr>
+		<tr style="text-align:center">
+		<td>12000</td>
+		<td>12345</td>
+		<td>Mateus_12345</td>
+		<td>23dAefkl</td>
+		<td>Aluno</td>
+		<td>Ativo</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>00347</td>
+		<td>34433</td>
+		<td>Thalia_00347</td>
+		<td>thathi3</td>
+		<td>Aluno</td>
+		<td>Desativado</td>
+		
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		
+		</tr>
+		<tr>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	
+		</tr>
+		</table><br /><br /><br /><br />
+	
+		<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+		<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar curso/matéria..."/> <a href="consulta3.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+		<tr>
+			<th>ID curso</th>
+			<th>ID matéria</th>
+			<th>Nome curso</th>		
+			<th>Nome matéria</th>
+			
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>11</td>
+		<td>Informática</td>
+		<td>PRAP1</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>12</td>
+		<td>Informática</td>
+		<td>PRAP2</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>13</td>
+		<td>Informática</td>
+		<td>PRAP3</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>14</td>
+		<td>Informática</td>
+		<td>BADA1</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>15</td>
+		<td>Informática</td>
+		<td>BADA2</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>16</td>
+		<td>Informática</td>
+		<td>BADA3</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>17</td>
+		<td>Informática</td>
+		<td>LIP1</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>18</td>
+		<td>Informática</td>
+		<td>LIP2</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>19</td>
+		<td>Informática</td>
+		<td>LIP3</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>20</td>
+		<td>Informática</td>
+		<td>ASOO</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>21</td>
+		<td>Informática</td>
+		<td>PTI</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>22</td>
+		<td>Informática</td>
+		<td>PTI2</td>
+		</tr>
+		</table><br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+		<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar turma/aluno/ano..."/> <a href="consulta4.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+		<tr>
+			<th>ID turma</th>
+			<th>Nome turma</th>		
+			<th>Ano turma</th>
+			<th>RM aluno</th>
+			<th>Nome aluno</th>
+		</tr>
+		<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>67654</td>
+		<td>Alice Guimarães</td>
+		</tr>
+		
+		<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>33232</td>
+		<td>Bruna Veloso</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>23231</td>
+		<td>Carlos Tavares</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>12347</td>
+		<td>Danilo da Cruz</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>18922</td>
+		<td>Milena Vitória</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>53322</td>
+		<td>Míriam Santos</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>55453</td>
+		<td>Matheus Sales</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>43433</td>
+		<td>Nicolas Silva</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>26943</td>
+		<td>Pedro Guimarães</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>67676</td>
+		<td>Rodrigo Fontana</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>58322</td>
+		<td>Raíssa Líbano</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>49064</td>
+		<td>Sara da Silva</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>34433</td>
+		<td>Thalia dos Anjos</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>77687</td>
+		<td>Thaís Rocha</td>
+		</tr>
+<tr style="text-align:center">
+		<td>39</td>
+		<td>INF2F</td>
+		<td>2019</td>
+		<td>61343</td>
+		<td>Thiago Ferreira</td>
+		</tr>
+		</table><br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+		<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input size="30"type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-520px;"id="txtBusca" placeholder="Buscar curso/matéria/prof/turma..."/> <a href="consulta5.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+		<tr>
+			<th>ID curso</th>
+			<th>ID matéria</th>
+			<th>Código professor</th>
+			<th>ID turma</th>
+			<th>Nome curso</th>		
+			<th>Nome matéria</th>
+			<th>Nome professor</th>
+			<th>Nome turma</th>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>10</td>
+		<td>98765</td>
+		<td>45</td>
+		<td>Informática</td>
+		<td>PRAP3</td>
+		<td>Pedro da Silva</td>
+		<td>INF2F</td>
+		</tr>
+		<tr style="text-align:center">
+		<td>1</td>
+		<td>11</td>
+		<td>98765</td>
+		<td>43</td>
+		<td>Informática</td>
+		<td>BADA2</td>
+		<td>Pedro da Silva</td>
+		<td>INF2A</td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		<td>&nbsp;</td>
+		</tr>
+		</table><br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:550px;padding-top:-10px;text-align:center">
+		<tr>
+			<th colspan="6" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-350px;"id="txtBusca" placeholder="Buscar horário-turma..."/> <a href="consulta6.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+				<tr>
+				<th>Horário</th>
+				<th>Segunda</th>
+				<th>Terça</th>
+				<th>Quarta</th>
+				<th>Quinta</th>
+				<th>Sexta</th>
+				</tr>
+				<tr>
+				<td>07:00</td>
+				<td>PRAP3</td>
+				<td>BADA2</td>
+				<td>LIP3</td>
+				<td>ASOO</td>
+				<td>LIP3</td>
+				</tr>
+				<tr>
+				<td>07:50</td>
+				<td>PRAP3</td>
+				<td>METC</td>
+				<td>ASOO</td>
+				<td>LIP3</td>
+				<td>BADA2</td>
+				</tr>
+				<tr>
+				<td>08:40</td>
+				<td>ASOO</td>
+				<td>BADA2</td>
+				<td>PRAP3</td>
+				<td>PTI2</td>
+				<td>PTI2</td>
+				</tr>
+				<tr>
+				<td>09:30</td>
+				<td>PTI2</td>
+				<td>PTI2</td>
+				<td>LIP3</td>
+				<td>LIP3</td>
+				<td>ASOO</td>
+				</tr>
+				<tr>
+				<th colspan="1" style="text-align:center">ID horário</th>
+				<th colspan="1" style="text-align:center">Código turma</th>
+				<th colspan="1" style="text-align:center">Data inicial</th>
+				<th colspan="1" style="text-align:center">Status horário</th>
+				</tr>
+				<tr>
+				<td>15</td>
+				<td>45</td>
+				<td>01/02/2020</td>
+				<td>Ativo</td>
+			</tr>
+				
+				</table><br /><br /><br /><br />
+				
+				<table border="1" style="margin-left:550px;padding-top:0px;text-align:center">
+				<tr>
+			<th colspan="6" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-350px;"id="txtBusca" placeholder="Buscar horário-professor..."/> <a href="consulta7.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+				<tr>
+				<th>Horário</th>
+				<th>Segunda</th>
+				<th>Terça</th>
+				<th>Quarta</th>
+				<th>Quinta</th>
+				<th>Sexta</th>
+				</tr>
+				<tr>
+				<td>07:00</td>
+				<td>INF1F</td>
+				<td>INF2A</td>
+				<td>INF2A</td>
+				<td>INF2E</td>
+				<td></td>
+				</tr>
+				<tr>
+				<td>07:50</td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td></td>
+				<td>INF1B</td>
+				</tr>
+				<tr>
+				<td>08:40</td>
+				<td>INF2B</td>
+				<td>INF1C</td>
+				<td>INF2F</td>
+				<td></td>
+				<td></td>
+				</tr>
+				<tr>
+				<td>09:30</td>
+				<td>INF2D</td>
+				<td>INF1E</td>
+				<td>INF2C</td>
+				<td>INF2A</td>
+				<td>INF1F</td>
+				</tr>
+				<th colspan="1" style="text-align:center">ID horário</th>
+				<th colspan="1" style="text-align:center">Código prof</th>
+				<th colspan="1" style="text-align:center">Data inicial</th>
+				<th colspan="1" style="text-align:center">Status horário</th>
+				</tr>
+				<tr>
+				<td>11</td>
+				<td>98765</td>
+				<td>01/02/2020</td>
+				<td>Ativo</td>
+			</tr>
+				</table><br /><br /><br /><br />
+			
+			<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+			<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input size="30"type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-530px;"id="txtBusca" placeholder="Buscar reportação de erro..."/> <a href="consulta8.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+			<tr>
+				<th>ID erro</th>
+				<th>RM/Código</th>		
+				<th>Titulo erro</th>
+				<th>Descricao erro</th>
+				<th>Nível de acesso</th>
+				<th>Data reportação</th>
+			</tr>
+			<tr>
+				<td>26</td>
+				<td>12276</td>
+				<td>Tarefas não aparecendo</td>
+				<td>As atividades que os professores lançam não estão sendo recebidas pelo meu app. Meus colegas estão tendo o mesmo problema.</td>
+				<td>Aluno</td>
+				<td>10/02/20</td>
+		</tr>
+		<tr>
+				<td>25</td>
+				<td>11153</td>
+				<td>Não consigo publicar tarefas</td>
+				<td>Ao clicar no botão "lançar atividade", o site não responde</td>
+				<td>Professor</td>
+				<td>10/02/20</td>
+		</tr>
+		<tr>
+		<td></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		</tr>
+		<tr>
+		<td></td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+				<td>&nbsp;</td>
+		</tr>
+		</table><br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+		<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar aviso ADM..."/> <a href="consulta9.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+			<tr>
+				<th>ID aviso</th>
+				<th>ID ADM</th>		
+				<th>Destinatário</th>
+				<th>Titulo aviso</th>
+				<th>Aviso</th>
+				<th>Data aviso</th>
+			</tr>
+			<tr>
+		
+				<td>23</td>
+				<td>00003</td>
+				<td>Todos</td>
+				<td>Site estará fora do ar</td>
+				<td>O site estará fora do ar no dia 29/02/2020 por motivo de manutenção</td>
+				<td>24/02/2020</td>
+		</tr>
+		<tr>
+		
+				<td>22</td>
+				<td>0003</td>
+				<td>Professores</td>
+				<td>Data limite de fechamento de notas</td>
+				<td>Você tem até dia 01/03/2020 para fechar as notas e frequências dos alunos</td>
+				<td>23/02/2020</td>
+		</tr>
+		<tr>
+				<td>21</td>
+				<td>0003</td>
+				<td>Todos</td>
+				<td>Barraca de churros e pastel</td>
+				<td>Amanhã, dia 23/02/2020, a barraca de pastel e churros estará na escola</td>
+				<td>22/02/2020</td>
+		</tr>
+		<tr>
+				<td>20</td>
+				<td>0003</td>
+				<td>Professores</td>
+				<td>Reunião informática</td>
+				<td>Reunião entre professores de informática dia 30/02/2020</td>
+				<td>21/02/2020</td>
+		</tr>
+		</table><br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+		<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar atividade..."/> <a href="consulta10.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+			<tr>
+				<th>ID Atividade</th>
+				<th>ID turma</th>
+				<th>ID professor</th>		
+				<th>Matéria</th>
+				<th>Titulo atividade</th>
+				<th>Descricao atividade</th>
+				<th>Data entrega</th>
+			</tr>
+				<tr>
+		
+				<td>456</td>
+				<td>45</td>
+				<td>98765</td>
+				<td>BADA2</td>
+				<td>Finalizar e entregar banco de dados</td>
+				<td>Finalizar e entregar o banco de dados iniciado essa semana</td>
+				<td>24/02/2020</td>
+
+		</tr>
+		<tr>
+		
+				<td>433</td>
+				<td>47</td>
+				<td>98765</td>
+				<td>BADA2</td>
+				<td>Pesquisa de BADA2</td>
+				<td>Pesquisar as diferentes maneiras de alocar um banco de dados. Trazer por escrito</td>
+				<td>17/02/2020</td>
+		</tr>
+		<tr>
+				
+				<td>426</td>
+				<td>46</td>
+				<td>98765</td>
+				<td>BADA2</td>
+				<td>Pesquisa de BADA2</td>
+				<td>Pesquisar as diferentes maneiras de alocar um banco de dados. Trazer por escrito</td>
+				<td>17/02/2020</td>
+		</tr>
+		</table><br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:400px;padding-top:-10px;width:1000px">
+		<tr>
+			<th colspan="8" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar aviso prof-turma..."/> <a href="consulta11.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+			<tr>
+				<th>ID aviso</th>
+				<th>ID professor</th>	
+				<th>ID turma</th>
+				<th>Titulo aviso</th>
+				<th>Aviso</th>
+				<th>Data aviso</th>
+			</tr>
+			<tr>
+				<td>82</td>
+				<td>98765</td>
+				<td>45</td>
+				<td>Levar notebook</td>
+				<td>Levem seus notebooks para a aula de amanhã, 12/02/20</td>
+				<td>11/02/2020</td>
+		</tr>
+		<tr>
+				<td>79</td>
+				<td>54544</td>
+				<td>45</td>
+				<td>Aula vaga de METC amanhã</td>
+				<td>Boa tarde, por motivos médicos não poderei ir à escola amanhã</td>
+				<td>09/02/2020</td>
+		</tr>
+		<tr>
+				
+				<td>74</td>
+				<td>43785</td>
+				<td>45</td>
+				<td>Último dia para entregar atividades</td>
+				<td>Fecharei as notas na quinta-feira. Amanhã é a última oportunidade para colocar atividades em dia</td>
+				<td>05/02/2020</td>
+		</tr>
+		</table><br /><br /><br /><br />
+		
+		<table border="1" style="margin-left:400px;padding-top:0px;width:1000px">
+		<tr>
+			<th colspan="13" style="background-color:#303f9f;padding:0px"><input type="text" style="background-color:#303f9f;font-family:sans-serif;
+  font-size:20px;padding-left:20px;color:white;border-style:none;height:35px;margin-left:-620px;"id="txtBusca" placeholder="Buscar boletim..."/> <a href="consulta12.1.html" style="height:35px;width:100px;text-decoration:none;background-color:grey;padding:5px;color:white;font-family:arial"/>Buscar</a>
+  </th>
+		</tr>
+		<tr>
+		<th colspan="3"style="border:none;text-align:left">Aluno: Thalia dos Anjos</th>
+		<th colspan="2" style="border:none;text-align:left">RM:34433</th>
+		<th colspan="3"style="border:none;text-align:center">Turma:INF2F-2019</th>
+		<th colspan="3" style="border:none;text-align:center">NºChamada:12</th>
+		<th colspan="2"style="border:none;text-align:right">ID Boletim: 27</th>
+
+		</tr>
+		<tr>
+		<th colspan="3"style="border:none;text-align:left">&nbsp;</th>
+		<th colspan="2" style="border:none;text-align:left">&nbsp;</th>
+		<th colspan="2"style="border:none;text-align:center">&nbsp;</th>
+		<th colspan="3" style="border:none;text-align:center">&nbsp;</th>
+		<th colspan="2"style="border:none;text-align:right">&nbsp;</th>
+
+		</tr>
+		
+				
+
+				
+				<tr>
+				<th colspan="2" style="text-align:center;border:none;">&nbsp;</th>
+				<th colspan="3" style="text-align:center">1ºTrimestre</th>
+				<th colspan="3" style="text-align:center">2ºTrimestre</th>
+				<th colspan="3" style="text-align:center">3ºTrimestre</th>
+				</tr>
+				<tr>
+				<th>Professor</th>
+				<th>Matéria</th>
+				<th>Qtde faltas</th>
+				<th>% Frequência</th>
+				<th>Média Período</th>
+				<th>Qtde faltas</th>
+				<th>% Frequência</th>
+				<th>Média Período</th>
+				<th>Qtde faltas</th>
+				<th>% Frequência</th>
+				<th>Média Período</th>
+				<th>% Frequência anual</th>
+				<th>Média anual</th>
+				</tr>
+				<tr style="text-align:center">
+				<td>Pedro da Silva</td>
+				<td>PRAP3</td>
+				<td>2</td>
+				<td>75%</td>
+				<td style="color:red">5.5</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>95%</td>
+				<td>9.0</td>
+				</tr>
+				<tr  style="text-align:center">
+				<td>Sandra de Melo</td>
+				<td>BADA2</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>8.5</td>
+				<td>1</td>
+				<td>90%</td>
+				<td>9.5</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>95%</td>
+				<td>8.5</td>
+				</tr>
+				<tr  style="text-align:center">
+				<td>Carolina Santos</td>
+				<td>PTI2</td>
+				<td>2</td>
+				<td>90%</td>
+				<td>9.5</td>
+				
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>90%</td>
+				<td>9.5</td>
+				</tr>
+				<tr  style="text-align:center">
+			
+				<td>Raul Fontes</td>
+				<td>LIP3</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>9.0</td>
+				
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>100%</td>
+				<td>9.0</td>
+				</tr>
+				<tr  style="text-align:center">
+			
+				<td>Marcos Antônio</td>
+				<td>ASOO</td>
+				<td>0</td>
+				<td>100%</td>
+				<td style="color:red">5.5</td>
+				
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>100%</td>
+				<td>9.0</td>
+				</tr>
+				<tr  style="text-align:center">
+			
+				<td>Eduardo Guimarães</td>
+				<td>METC</td>
+				<td>2</td>
+				<td>90%</td>
+				<td>10</td>
+				
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>0</td>
+				<td>100%</td>
+				<td>10</td>
+				<td>90%</td>
+				<td>10</td>
+				</tr>
+				<tr>
+		
+
+				
+				
+				</table><br /><br /><br /><br />
+</body>
+		
+</html>
